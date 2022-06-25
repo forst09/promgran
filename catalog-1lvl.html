@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Каталог 1</title>
+</head>
+
+<body>
+    <!-- начало блока "Шапка" -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__container">
+                <div class="header__item header__item-burger">
+                    <div class="header__burger">
+                        <a href="#" class="header__burger-btn">
+                            <span class="header__burger-wrapper">
+                                <span class="header__burger-span"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item header__item-logo">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link"><img src="img/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="header__item header__item-search">
+                    <form action="#">
+                        <div class="header__form-search-wrapper">
+                            <input class="header__input-search" type="text">
+                            <input class="header__input-btn" id="header-search" type="submit"></input>
+                            <label class="header__input-label" for="header-search"><img src="img/search.svg"
+                                    alt=""></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__item">
+                    <div class="work">
+                        <div class="work-days">ПН - ПТ</div>
+                        <div class="work-hours"><span>8<sup>00</sup></span> - 18<sup>00</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__item-socials">
+                        <a href="#" class="socials__item" rel="nofollow">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                                    stroke="#FF6D1A" />
+                                <path
+                                    d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__item" rel="nofollow">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                                    stroke="#FF6D1A" />
+                                <path
+                                    d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item header__item-mobile">
+                    <div class="header__item-phone">
+                        <a href="tel:88314180190" class="phone" rel="nofollow">8 (831) 418-01-90</a>
+                        <a href="#" class="header__call-text">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9872 18.0823L17.6623 17.3054C18.092 16.8751 18.3333 16.2922 18.3333 15.6846C18.3333 15.077 18.092 14.4942 17.6623 14.0639C17.6393 14.0409 15.8543 12.6701 15.8543 12.6701C15.4259 12.263 14.8569 12.0364 14.2654 12.0372C13.6739 12.038 13.1055 12.2663 12.6782 12.6745L11.2642 13.8639C10.1099 13.387 9.06141 12.6873 8.17885 11.8047C7.29629 10.9222 6.59707 9.87436 6.12136 8.72133L7.3084 7.31423C7.71771 6.88778 7.94665 6.32028 7.94761 5.72969C7.94858 5.13909 7.72151 4.57085 7.31359 4.14307C7.31359 4.14307 5.93885 2.36346 5.91585 2.3405C5.49257 1.91522 4.91866 1.67325 4.31812 1.66688C3.71759 1.6605 3.13866 1.89023 2.70641 2.30643L1.85322 3.04701C-3.18723 8.88426 7.66673 19.6352 13.7073 19.442C14.3172 19.4455 14.9217 19.327 15.4851 19.0934C16.0484 18.8599 16.5592 18.5161 16.9872 18.0823Z"
+                                    fill="#FF6D1A" />
+                                <path
+                                    d="M11.6666 4.16679C12.2222 4.0742 13.6111 4.16679 14.7222 5.2779C15.8333 6.38901 15.9259 7.96308 15.8333 8.61122"
+                                    stroke="#FF6D1A" stroke-linecap="round" />
+                                <path
+                                    d="M11.1111 0.833443C11.6666 0.740851 14.859 0.719592 16.9444 2.80504C19.0298 4.89048 19.2592 7.96309 19.1666 8.61123"
+                                    stroke="#FF6D1A" stroke-linecap="round" />
+                            </svg>
+                            <span class="header__call-text-span">Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__mobile-phone">
+                        <a href="tel:88314180190" class="header__mobile-phone-link" rel="nofollow"><img
+                                src="img/mobile-phone.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__menu-nav">
+                        <li class="header__meni-item">
+                            <div class="header__menu-catalog">
+                                <div class="header__menu-catalog-burger">
+                                    <span class="header__menu-catalog-burger-span"></span>
+                                    <div class="header__menu-catalog-submenu-wrapper">
+                                        <ul class="header__menu-catalog-submenu">
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Комбикормовое оборудование
+                                                </li>
+                                            </a>
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Транспортирующее оборудование
+                                                </li>
+                                            </a>
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Запасные части</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="header__menu-link header__menu-burger-text"
+                                    href="catalog-1lvl.html">Каталог</a>
+                            </div>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Акции</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Ремонт и модернизация</a>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Линии гранулирования</a>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Оплата и доставка</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">О компании</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- конец блока "Шапка" -->
+
+    <!-- начало секции "Навигация" -->
+    <section class="navigation">
+        <div class="wrapper">
+            <nav class="navigation__nav">
+                <ul class="navigation__nav-list">
+                    <li class="navigation__nav-item navigation__nav-link"><a href="index.html">Главная</a></li>
+                    <li class="navigation__nav-item"><span>Каталог 1 уровня</span></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="navigation__back"><span class="navigation__back-span">Назад</span></a>
+        </div>
+    </section>
+    <!-- конец секции "Навигация" -->
+
+    <!-- начало секции "Каталог" -->
+    <section class="catalog-1lvl">
+        <div class="wrapper">
+            <h1 class="title-big">Каталог</h1>
+            <div class="text left text-max-width">
+                <p>Описание раздела. ГранМастер продают различные оборудования для
+                    гранулоирования
+                    комбикормов. Бывают разные мощности, дло 100 тонн в час. Максимум 2 строчки.</p>
+            </div>
+            <div class="catalog__wrapper">
+                <a href="#" class="catalog__link">
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Комбикормовое оборудование</div>
+                        <div class="catalog__item-image">
+                            <img src="img/catalog/kat-1.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog__link">
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Транспортирующее оборудование</div>
+                        <div class="catalog__item-image">
+                            <img src="img/catalog/kat-2.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog__link">
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Запасные части</div>
+                        <div class="catalog__item-image">
+                            <img src="img/catalog/kat-3.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <a href="#" class="catalog__link">
+                <div class="catalog__item catalog__item-granulation">
+                    <div class="catalog__item-title">Линии гранулирования</div>
+                    <div class="catalog__item-image">
+                        <img src="img/catalog-1lvl/granulation.png" alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- конец секции "Каталог" -->
+
+    <!-- начало секции "Вы интересовались" -->
+    <section class="interested">
+        <div class="wrapper">
+            <div class="title-container title-container-mini">
+                <span class="title-span"></span>
+                <h3 class="title">Вы <span>интересовались</span></h3>
+                <span class="title-span"></span>
+            </div>
+            <div class="text">
+                <p>Описание раздела. ГранМастер продают различные оборудования для гранулоирования
+                    комбикормов. Бывают разные мощности, дло 100 тонн в час. Максимум 2 строчки.</p>
+            </div>
+        </div>
+
+        <div class="scroll">
+            <div class="swiper swiper-interested">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="interested__card-link" href="#">
+                            <div class="interested__card">
+                                <div class="interested__card-image">
+                                    <img src="img/demanded/tovar-1.jpg" alt="">
+                                </div>
+                                <div class="interested__card-text">
+                                    <div class="interested__card-name">Винтовой конвейер (шнековый) КВ-150</div>
+                                    <div class="interested__card-property">Производительность, т/час <span
+                                            class="interested__card-dash"></span> <span
+                                            class="interested__card-value">до
+                                            16</span>
+                                    </div>
+                                    <div class="interested__card-property">Мощность, кВт <span
+                                            class="interested__card-dash"></span>
+                                        <span class="interested__card-value">до 5,5</span>
+                                    </div>
+                                    <div class="interested__card-property">Длина, м <span
+                                            class="interested__card-dash"></span><span class="interested__card-value">до
+                                            12</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="interested__card-link" href="#">
+                            <div class="interested__card">
+                                <div class="interested__card-image">
+                                    <img src="img/demanded/tovar-2.jpg" alt="">
+                                </div>
+                                <div class="interested__card-text">
+                                    <div class="interested__card-name">Зерновая нория НЗ (элеватор ковшовый)</div>
+                                    <div class="interested__card-property">Производительность, т/час <span
+                                            class="interested__card-dash"></span> <span
+                                            class="interested__card-value">до
+                                            50</span>
+                                    </div>
+                                    <div class="interested__card-property">Длина, м <span
+                                            class="interested__card-dash"></span><span class="interested__card-value">от
+                                            2
+                                            до 30</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="interested__card-link" href="#">
+                            <div class="interested__card">
+                                <div class="interested__card-image">
+                                    <img src="img/demanded/tovar-3.jpg" alt="">
+                                </div>
+                                <div class="interested__card-text">
+                                    <div class="interested__card-name">Винтовой конвейер (шнековый) КВ-150</div>
+                                    <div class="interested__card-property">Производительность, т/час <span
+                                            class="interested__card-dash"></span> <span
+                                            class="interested__card-value">до
+                                            16</span>
+                                    </div>
+                                    <div class="interested__card-property">Мощность, кВт <span
+                                            class="interested__card-dash"></span>
+                                        <span class="interested__card-value">до 5,5</span>
+                                    </div>
+                                    <div class="interested__card-property">Длина, м <span
+                                            class="interested__card-dash"></span><span class="interested__card-value">до
+                                            12</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="interested__buttons">
+                    <div class="swiper-button-prev interested-button-prev"></div>
+                    <div class="swiper-button-next interested-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- конец секции "Вы интересовались" -->
+
+    <div class="background">
+        <!-- начало секции "Как заказать?" -->
+        <section class="order">
+            <div class="wrapper">
+                <div class="title-container">
+                    <span class="title-span"></span>
+                    <h3 class="title">Как заказать?</h3>
+                    <span class="title-span"></span>
+                </div>
+                <div class="order__container">
+                    <div class="order__item">
+                        <div class="order__item-text">Оставляете заявку</div>
+                        <span class="order__item-number">01</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Получаете коммерческое предложение</div>
+                        <span class="order__item-number">02</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Подписываете договор</div>
+                        <span class="order__item-number">03</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Получаете поставку</div>
+                        <span class="order__item-number">04</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Оплачиваете</div>
+                        <span class="order__item-number">05</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- конец секции "Как заказать?" -->
+
+
+        <!-- начало секции "Этапы изготовления гранул" -->
+        <section class="stages js-hide">
+            <div class="wrapper">
+                <div class="title-container">
+                    <span class="title-span"></span>
+                    <h3 class="title">Этапы изготовления гранул</h3>
+                    <span class="title-span"></span>
+                </div>
+                <div class="text left text-content text-hide stages__text">
+                    <p>Переработка производственных отходов во вторичное сырье и грануляция –
+                        сравнительно
+                        молодая и перспективная сфера предпринимательства в нашей стране. Использование дешевого сырья,
+                        которое перерабатывается в полезные для хозяйства продукты, обеспечивает рентабельность
+                        подобного
+                        бизнеса. При этом большое значение имеет оборудование для производства гранул, а именно его
+                        надежность, качество изготавливаемого продукта, энергоэффективность. Компания АЛБ Групп
+                        предлагает
+                        приобрести готовые технологические линии грануляции и их отдельные составляющие по конкурентным
+                        ценам. Большой положительный опыт, десятки реализованных проектов позволяют нам делать одно из
+                        лучших предложений на российском рынке.</p>
+                    <h4>Основные этапы изготовления гранул</h4>
+                    <p>При работе с разными типами органического сырья гранулирование имеет
+                        схожие
+                        циклы. Поэтому в основе технологических линий используется одинаковое по функциям оборудование
+                        для
+                        производства топливных, травяных, зерновых гранул. Можно выделить несколько основных этапов
+                        гранулирования:
+                    <ul>
+                        <li>Первичное дробление массы;</li>
+                        <li>Сушка до необходимых показателей влажности;</li>
+                        <li>Повторное дробление до мельчайших частиц;</li>
+                        <li>Предварительная обработка полученной массы различными
+                            способами;
+                        </li>
+                        <li>Загрузка смеси в гранулятор для прессования;</li>
+                        <li>Фасовка.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="show-btn__wrapper">
+                    <a class="show-btn"><span class="show-btn__span show-btn__show-span">Показать
+                            полностью</span><span class="show-btn__span show-btn__hide-span">Скрыть</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- конец секции "Этапы изготовления гранул" -->
+
+        <!-- начало секции "Нужна наша консультация?" -->
+        <section class="consultation">
+            <div class="wrapper">
+                <div class="title-container">
+                    <span class="title-span"></span>
+                    <h3 class="title">Нужна наша <span>консультация?</span></h3>
+                    <span class="title-span"></span>
+                </div>
+                <form class="consultation__form" action="#">
+                    <div class="consultation__form-wrapper">
+                        <div class="consultation__form-wrapper-item">
+                            <div class="consultation__input-wrapper">
+                                <input id="catalog1lvl-input-name" class="consultation__form-input" type="text"
+                                    placeholder="Фамилия Имя Отчество">
+                                <label class="consultation__label-name" for="catalog1lvl-input-name"></label>
+                            </div>
+                            <div class="consultation__input-wrapper">
+                                <input id="catalog1lvl-input-phone" class="consultation__form-input" type="text"
+                                    placeholder="+7 (900) 987-65-43">
+                                <label class="consultation__label-phone" for="catalog1lvl-input-phone"></label>
+                            </div>
+
+                        </div>
+                        <div class="consultation__form-wrapper-item">
+                            <div class="consultation__textarea-wrapper">
+                                <textarea id="catalog1lvl-textarea"
+                                    class="consultation__form-input consultation__form-textarea"
+                                    placeholder="Пожалуйста, введите комментарий"></textarea>
+                                <label class="consultation__label-textarea" for="catalog1lvl-textarea"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultation__buttons">
+                        <div class="btn-wrapper">
+                            <button type="submit" class="btn">Отправить</button>
+                        </div>
+                        <div class="consultation__agreement">При отправке данных, вы даете согласие
+                            на обработку <a href="#" class="consultation__agreement-link">персональных
+                                данных</a></div>
+
+                        <div class="consultation__btn-download-wrapper">
+                            <a class="consultation__btn-download" href="#">Скачать прайс-лист</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- конец секции "Нужна наша консультация?" -->
+    </div>
+
+
+
+
+    <!-- начало секции "Подвал" -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <div class="footer__container-first">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <a href="#" class="footer__logo-link"><img src="img/logo.svg" alt=""></a>
+                        </div>
+                        <a href="tel:88314180190" class="phone" rel="nofollow">8 (831) 418-01-90</a>
+                        <div class="socials footer__socials">
+                            <a href="#" class="socials__item" rel="nofollow"><svg width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                                        stroke="#FF6D1A" />
+                                    <path
+                                        d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
+                            <a href="#" class="socials__item" rel="nofollow"> <svg width="22" height="22"
+                                    viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                                        stroke="#FF6D1A" />
+                                    <path
+                                        d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <nav class="footer__nav">
+                            <ul>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Каталог</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Акции</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Линии гранулирования</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Реализованные проекты</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <nav class="footer__nav footer__nav-second">
+                            <ul>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Каталог</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Акции</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Линии гранулирования</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Реализованные проекты</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__container-second">
+                    <div class="footer__item">
+                        <div class="footer__work">
+                            <div class="footer__work-days">ПН - ПТ</div>
+                            <div class="footer__work-hours"><span>8<sup>00</sup></span> - 18<sup>00</sup></div>
+                        </div>
+                        <div class="address">Нижний Новгород, переулок Союзный, д. 45, 4-й этаж, офис 12</div>
+                        <a href="mailto:promgrann@yandex.ru" class="mail"><span
+                                class="mail-span">promgrann@yandex.ru</span></a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__upfly">
+                            <div class="footer__upfly-icon">
+                                <img src="img/upfly.svg" alt="">
+                            </div>
+                            <div class="footer__upfly-text">Разработано в UpFly</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- конец секции "Подвал" -->
+
+    <!-- нижняя менюшка на планшетах/телефонах -->
+    <section class="buttom-menu">
+        <div class="buttom-menu__wrapper">
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/home.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Главная</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/catalog.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Каталог</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/granulation.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Линии
+                        гранулирования</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/contacts.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Контакты</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- конец нижняя менюшка на планшетах/телефонах -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/full-main.js"></script>
+</body>
+
+</html>

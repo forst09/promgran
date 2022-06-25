@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Formular;
+    src: url("../fonts/FORMULAR.TTF");
+}
+@font-face {
+    font-family: Formular-Black;
+    src: url("../fonts/FORMULAR-BLACK.TTF");
+}
+@font-face {
+    font-family: Formular-Medium;
+    src: url("../fonts/FORMULAR-MEDIUM.TTF");
+}
+@font-face {
+    font-family: Formular-Bold;
+    src: url("../fonts/FORMULAR-BOLD.TTF");
+}
+@font-face {
+    font-family: Formular-Light;
+    src: url("../fonts/FORMULAR-LIGHT.TTF");
+}

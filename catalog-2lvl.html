@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Каталог 2</title>
+</head>
+
+<body>
+    <!-- начало блока "Шапка" -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__container">
+                <div class="header__item header__item-burger">
+                    <div class="header__burger">
+                        <a href="#" class="header__burger-btn">
+                            <span class="header__burger-wrapper">
+                                <span class="header__burger-span"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item header__item-logo">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link"><img src="img/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="header__item header__item-search">
+                    <form action="#">
+                        <div class="header__form-search-wrapper">
+                            <input class="header__input-search" type="text">
+                            <input class="header__input-btn" id="header-search" type="submit"></input>
+                            <label class="header__input-label" for="header-search"><img src="img/search.svg"
+                                    alt=""></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__item">
+                    <div class="work">
+                        <div class="work-days">ПН - ПТ</div>
+                        <div class="work-hours"><span>8<sup>00</sup></span> - 18<sup>00</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__item-socials">
+                        <a href="#" class="socials__item" rel="nofollow">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                                    stroke="#FF6D1A" />
+                                <path
+                                    d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__item" rel="nofollow">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                                    stroke="#FF6D1A" />
+                                <path
+                                    d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item header__item-mobile">
+                    <div class="header__item-phone">
+                        <a href="tel:88314180190" class="phone" rel="nofollow">8 (831) 418-01-90</a>
+                        <a href="#" class="header__call-text">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9872 18.0823L17.6623 17.3054C18.092 16.8751 18.3333 16.2922 18.3333 15.6846C18.3333 15.077 18.092 14.4942 17.6623 14.0639C17.6393 14.0409 15.8543 12.6701 15.8543 12.6701C15.4259 12.263 14.8569 12.0364 14.2654 12.0372C13.6739 12.038 13.1055 12.2663 12.6782 12.6745L11.2642 13.8639C10.1099 13.387 9.06141 12.6873 8.17885 11.8047C7.29629 10.9222 6.59707 9.87436 6.12136 8.72133L7.3084 7.31423C7.71771 6.88778 7.94665 6.32028 7.94761 5.72969C7.94858 5.13909 7.72151 4.57085 7.31359 4.14307C7.31359 4.14307 5.93885 2.36346 5.91585 2.3405C5.49257 1.91522 4.91866 1.67325 4.31812 1.66688C3.71759 1.6605 3.13866 1.89023 2.70641 2.30643L1.85322 3.04701C-3.18723 8.88426 7.66673 19.6352 13.7073 19.442C14.3172 19.4455 14.9217 19.327 15.4851 19.0934C16.0484 18.8599 16.5592 18.5161 16.9872 18.0823Z"
+                                    fill="#FF6D1A" />
+                                <path
+                                    d="M11.6666 4.16679C12.2222 4.0742 13.6111 4.16679 14.7222 5.2779C15.8333 6.38901 15.9259 7.96308 15.8333 8.61122"
+                                    stroke="#FF6D1A" stroke-linecap="round" />
+                                <path
+                                    d="M11.1111 0.833443C11.6666 0.740851 14.859 0.719592 16.9444 2.80504C19.0298 4.89048 19.2592 7.96309 19.1666 8.61123"
+                                    stroke="#FF6D1A" stroke-linecap="round" />
+                            </svg>
+                            <span class="header__call-text-span">Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__mobile-phone">
+                        <a href="tel:88314180190" class="header__mobile-phone-link" rel="nofollow"><img
+                                src="img/mobile-phone.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__menu-nav">
+                        <li class="header__meni-item">
+                            <div class="header__menu-catalog">
+                                <div class="header__menu-catalog-burger">
+                                    <span class="header__menu-catalog-burger-span"></span>
+                                    <div class="header__menu-catalog-submenu-wrapper">
+                                        <ul class="header__menu-catalog-submenu">
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Комбикормовое оборудование
+                                                </li>
+                                            </a>
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Транспортирующее оборудование
+                                                </li>
+                                            </a>
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Запасные части</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="header__menu-link header__menu-burger-text"
+                                    href="catalog-1lvl.html">Каталог</a>
+                            </div>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Акции</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Ремонт и модернизация</a>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Линии гранулирования</a>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Оплата и доставка</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">О компании</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- конец блока "Шапка" -->
+
+    <!-- начало секции "Навигация" -->
+    <section class="navigation">
+        <div class="wrapper">
+            <nav class="navigation__nav">
+                <ul class="navigation__nav-list">
+                    <li class="navigation__nav-item navigation__nav-link"><a href="index.html">Главная</a></li>
+                    <li class="navigation__nav-item navigation__nav-link"><a href="catalog-1lvl.html">Каталог 1
+                            уровня</a></li>
+                    <li class="navigation__nav-item"><span>Каталог 2 уровня</span></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="navigation__back"><span class="navigation__back-span">Назад</span></a>
+        </div>
+    </section>
+    <!-- конец секции "Навигация" -->
+
+    <!-- начало секции "Каталог 2го уровня" -->
+    <section class="products">
+        <div class="wrapper">
+            <h1 class="title-big">Комбикормовое оборудование</h1>
+            <div class="text left text-max-width">
+                <p>Описание раздела. ГранМастер продают различные оборудования для
+                    гранулоирования
+                    комбикормов. Бывают разные мощности, дло 100 тонн в час. Максимум 2 строчки.</p>
+            </div>
+
+        </div>
+        <!-- навигация -->
+        <div class="scroll">
+            <div class="swiper swiper-catalog2lvl-nav">
+                <div class="swiper-wrapper products__navigation">
+                    <div class="swiper-slide">
+                        <a href="#" class="products__navigation-link">
+                            <div class="products__navigation-item">
+                                <div class="products__navigation-text">Смесители</div>
+                                <div class="products__navigation-image">
+                                    <img src="img/catalog-2lvl/nav-1.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="products__navigation-link">
+                            <div class="products__navigation-item">
+                                <div class="products__navigation-text">Измельчители гранул</div>
+                                <div class="products__navigation-image">
+                                    <img src="img/catalog-2lvl/nav-2.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="products__navigation-link">
+                            <div class="products__navigation-item">
+                                <div class="products__navigation-text">Колонны охлаждения</div>
+                                <div class="products__navigation-image">
+                                    <img src="img/catalog-2lvl/nav-3.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="products__navigation-link">
+                            <div class="products__navigation-item">
+                                <div class="products__navigation-text">Просеиватели гранул</div>
+                                <div class="products__navigation-image">
+                                    <img src="img/catalog-2lvl/nav-4.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="products__navigation-link">
+                            <div class="products__navigation-item">
+                                <div class="products__navigation-text">Дробилки</div>
+                                <div class="products__navigation-image">
+                                    <img src="img/catalog-2lvl/nav-5.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- сортировка -->
+        <div class="wrapper">
+            <div class="products__filters">
+                <div class="products__filters-list" href="javascript:void(0)"><span
+                        class="products__filters-list-span">по
+                        мощности</span>
+                    <div class="products__filters-dropdown">
+                        <div class="products__filters-dropdown-item" data-text="по мощности">по мощности</div>
+                        <div class="products__filters-dropdown-item" data-text="по длине">по длине</div>
+                        <div class="products__filters-dropdown-item" data-text="по массе">по массе</div>
+                        <div class="products__filters-dropdown-item" data-text="объем смесителя">объем смесителя</div>
+                    </div>
+                </div>
+                <div class="products__filters-links">
+                    <a class="products__filters-item active">
+                        <span href="#" class="products__filters-item-link">по мощности</span>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.5" y1="0.5" x2="23.1667" y2="0.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="4.5" x2="20.5" y2="4.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="8.5" x2="16.5" y2="8.5" stroke="#537791" stroke-linecap="round" />
+                            <path class="products__filters-arrow-bottom"
+                                d="M3.72 9.25L6.44 6.53M3.72 9.25L1 6.53M3.72 9.25V0.75" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="products__filters-arrow-top"
+                                d="M3.72 0.75L6.44 3.47M3.72 0.75L1 3.47M3.72 0.75V9.25" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a class="products__filters-item">
+                        <span href="#" class="products__filters-item-link">по длине</span>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.5" y1="0.5" x2="23.1667" y2="0.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="4.5" x2="20.5" y2="4.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="8.5" x2="16.5" y2="8.5" stroke="#537791" stroke-linecap="round" />
+                            <path class="products__filters-arrow-bottom"
+                                d="M3.72 9.25L6.44 6.53M3.72 9.25L1 6.53M3.72 9.25V0.75" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="products__filters-arrow-top"
+                                d="M3.72 0.75L6.44 3.47M3.72 0.75L1 3.47M3.72 0.75V9.25" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a class="products__filters-item">
+                        <span href="#" class="products__filters-item-link">по производительности</span>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.5" y1="0.5" x2="23.1667" y2="0.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="4.5" x2="20.5" y2="4.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="8.5" x2="16.5" y2="8.5" stroke="#537791" stroke-linecap="round" />
+                            <path class="products__filters-arrow-bottom"
+                                d="M3.72 9.25L6.44 6.53M3.72 9.25L1 6.53M3.72 9.25V0.75" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="products__filters-arrow-top"
+                                d="M3.72 0.75L6.44 3.47M3.72 0.75L1 3.47M3.72 0.75V9.25" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a class="products__filters-item">
+                        <span href="#" class="products__filters-item-link">объем смесителя</span>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.5" y1="0.5" x2="23.1667" y2="0.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="4.5" x2="20.5" y2="4.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="8.5" x2="16.5" y2="8.5" stroke="#537791" stroke-linecap="round" />
+                            <path class="products__filters-arrow-bottom"
+                                d="M3.72 9.25L6.44 6.53M3.72 9.25L1 6.53M3.72 9.25V0.75" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="products__filters-arrow-top"
+                                d="M3.72 0.75L6.44 3.47M3.72 0.75L1 3.47M3.72 0.75V9.25" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a class="products__filters-item">
+                        <span href="#" class="products__filters-item-link">по мощности</span>
+                        <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.5" y1="0.5" x2="23.1667" y2="0.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="4.5" x2="20.5" y2="4.5" stroke="#537791" stroke-linecap="round" />
+                            <line x1="9.5" y1="8.5" x2="16.5" y2="8.5" stroke="#537791" stroke-linecap="round" />
+                            <path class="products__filters-arrow-bottom"
+                                d="M3.72 9.25L6.44 6.53M3.72 9.25L1 6.53M3.72 9.25V0.75" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="products__filters-arrow-top"
+                                d="M3.72 0.75L6.44 3.47M3.72 0.75L1 3.47M3.72 0.75V9.25" stroke="#537791"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="products__filters-tabs">
+                    <a id="productsTabTiles" class="products__filters-tabs-img tab" data-tab="productsTiles">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="9.15385" height="9.15385" rx="1.5" stroke="#7EB8E2" />
+                            <rect x="12.3457" y="0.5" width="9.15385" height="9.15385" rx="1.5" stroke="#7EB8E2" />
+                            <rect x="12.3457" y="12.3457" width="9.15385" height="9.15385" rx="1.5" stroke="#7EB8E2" />
+                            <rect x="0.5" y="12.3457" width="9.15385" height="9.15385" rx="1.5" stroke="#7EB8E2" />
+                        </svg>
+                    </a>
+                    <a id="productsTabLines" class="products__filters-tabs-img tab" data-tab="productsLines">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="12.3457" width="21" height="9.15385" rx="1.5" stroke="#7EB8E2" />
+                            <rect x="0.5" y="0.5" width="21" height="9.15385" rx="1.5" stroke="#7EB8E2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <!-- табы плиткой -->
+            <div id="productsTiles" class="products-tab tab-content">
+                <div class="products__tiles">
+                    <a class="products__tiles-item" href="#quickView" data-fancybox data-modal="true">
+                        <div class="products__tiles-item-image">
+                            <ul class="products__tiles-col-list">
+                                <li class="products__tiles-col-item active">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-1.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-2.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-3.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-4.jpg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__tiles-item-power">До 16 т/час</div>
+                        <span class="products__tiles-item-name" href="">Винтовой конвейер (шнековый) КВ-150</span>
+                    </a>
+                    <a class="products__tiles-item" href="#quickView" data-fancybox data-modal="true">
+                        <div class="products__tiles-item-image">
+                            <ul class="products__tiles-col-list">
+                                <li class="products__tiles-col-item active">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-1.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-2.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-3.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-4.jpg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__tiles-item-power">До 16 т/час</div>
+                        <span class="products__tiles-item-name" href="">Винтовой конвейер (шнековый) КВ-150</span>
+                    </a>
+                    <a class="products__tiles-item" href="#quickView" data-fancybox data-modal="true">
+                        <div class="products__tiles-item-image">
+                            <ul class="products__tiles-col-list">
+                                <li class="products__tiles-col-item active">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-1.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-2.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-3.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-4.jpg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__tiles-item-power">До 16 т/час</div>
+                        <span class="products__tiles-item-name" href="">Винтовой конвейер (шнековый) КВ-150</span>
+                    </a>
+                    <a class="products__tiles-item" href="#quickView" data-fancybox data-modal="true">
+                        <div class="products__tiles-item-image">
+                            <ul class="products__tiles-col-list">
+                                <li class="products__tiles-col-item active">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-1.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-2.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-3.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-4.jpg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__tiles-item-power">До 16 т/час</div>
+                        <span class="products__tiles-item-name" href="">Винтовой конвейер (шнековый) КВ-150</span>
+                    </a>
+                    <a class="products__tiles-item" href="#quickView" data-fancybox data-modal="true">
+                        <div class="products__tiles-item-image">
+                            <ul class="products__tiles-col-list">
+                                <li class="products__tiles-col-item active">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-1.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-2.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-3.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-4.jpg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__tiles-item-power">До 16 т/час</div>
+                        <span class="products__tiles-item-name" href="">Винтовой конвейер (шнековый) КВ-150</span>
+                    </a>
+                    <a class="products__tiles-item" href="#quickView" data-fancybox data-modal="true">
+                        <div class="products__tiles-item-image">
+                            <ul class="products__tiles-col-list">
+                                <li class="products__tiles-col-item active">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-1.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-2.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-3.jpg" alt="">
+                                    </span>
+                                </li>
+                                <li class="products__tiles-col-item">
+                                    <span class="products__tiles-col-col"></span>
+                                    <span class="products__tiles-col-img">
+                                        <img src="img/demanded/tovar-4.jpg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__tiles-item-power">До 16 т/час</div>
+                        <span class="products__tiles-item-name" href="">Винтовой конвейер (шнековый) КВ-150</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- табы в строку -->
+            <div id="productsLines" class="tab-content products-tab">
+                <div class="products__lines ">
+                    <div class="products__lines-item">
+                        <div class="products__lines-content">
+                            <div class="products__lines-image">
+                                <img src="img/catalog-2lvl/products-1.png" alt="">
+                            </div>
+                            <div class="products__lines-info">
+                                <div class="products__lines-info-main">
+                                    <div class="products__lines-info-name">Механическая колонна охлаждения гранул серии
+                                        SNm-0,5</div>
+                                    <div class="products__lines-info-property">Производительность, кг/час<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">до 750</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Мощность, кВт<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">3,74</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Масса, кг<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">не более 130</span>
+                                    </div>
+                                </div>
+                                <div class="products__lines-info-desc">Колонны охлаждения гранул SNm предназначены для
+                                    воздушного охлаждения гранул после их выхода из пресс-гранулятора. В колонне
+                                    охлаждения
+                                    воздушный поток, двигаясь во встречном направлении к подаче гранул, отводит излишнюю
+                                    влагу,
+                                    снимает тепло, очищает гранулы от крошки и пыли. После прохождения через колонну
+                                    гранулы
+                                    становятся прочными, готовыми к транспортировке и длительному хранению.</div>
+                            </div>
+                        </div>
+                        <a class="btn-rect" href="#makeRequest" data-fancybox data-modal="true">Отправить заявку</a>
+                    </div>
+                    <div class="products__lines-item">
+                        <div class="products__lines-content">
+                            <div class="products__lines-image">
+                                <img src="img/catalog-2lvl/products-2.png" alt="">
+                            </div>
+                            <div class="products__lines-info">
+                                <div class="products__lines-info-main">
+                                    <div class="products__lines-info-name">Вертикальный смеситель серии СКВ-1,5
+                                    </div>
+                                    <div class="products__lines-info-property">Производительность, кг/час<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">до 750</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Мощность, кВт<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">3,74</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Масса, кг<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">не более 130</span>
+                                    </div>
+                                </div>
+                                <div class="products__lines-info-desc">Смеситель СКВ предназначен для приготовления
+                                    полнорационных и сбалансированных комбикормовых смесей из измельчённого зернофуража,
+                                    и
+                                    обогатительных элементов (БМВД, премиксы, мясокостная мука, шрот и т.д.).</div>
+                            </div>
+                        </div>
+                        <a class="btn-rect" href="#makeRequest" data-fancybox data-modal="true">Отправить заявку</a>
+                    </div>
+                    <div class="products__lines-item">
+                        <div class="products__lines-content">
+                            <div class="products__lines-image">
+                                <img src="img/catalog-2lvl/products-3.png" alt="">
+                            </div>
+                            <div class="products__lines-info">
+                                <div class="products__lines-info-main">
+                                    <div class="products__lines-info-name">Пневматические дробилки серии ДСК-0,5
+                                    </div>
+                                    <div class="products__lines-info-property">Производительность, кг/час<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">до 750</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Мощность, кВт<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">3,74</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Масса, кг<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">не более 130</span>
+                                    </div>
+                                </div>
+                                <div class="products__lines-info-desc">Молотковые пневмодробилки ДСК предназначены для
+                                    измельчения компонентов комбикорма. Отлично подходят для дробления рассыпного и
+                                    мелкокускового сырья: зерна, кукурузы, бобов, шрота, жмыха и т.д.</div>
+                            </div>
+                        </div>
+                        <a class="btn-rect" href="#makeRequest" data-fancybox data-modal="true">Отправить заявку</a>
+                    </div>
+                    <div class="products__lines-item">
+                        <div class="products__lines-content">
+                            <div class="products__lines-image">
+                                <img src="img/catalog-2lvl/products-4.png" alt="">
+                            </div>
+                            <div class="products__lines-info">
+                                <div class="products__lines-info-main">
+                                    <div class="products__lines-info-name">Комбикормовый завод КЗ
+                                    </div>
+                                    <div class="products__lines-info-property">Производительность, кг/час<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">до 750</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Мощность, кВт<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">3,74</span>
+                                    </div>
+                                    <div class="products__lines-info-property">Масса, кг<span
+                                            class="products__lines-info-dash"></span> <span
+                                            class="products__lines-info-value">не более 130</span>
+                                    </div>
+                                </div>
+                                <div class="products__lines-info-desc">Комплексы для приготовления комбикорма КЗ
+                                    предназначены для изготовления рассыпного комбикорма на базе хозяйства. В комплекс
+                                    включено всё оборудование, необходимое для приготовления высококачественного </div>
+                            </div>
+                        </div>
+                        <a class="btn-rect" href="#makeRequest" data-fancybox data-modal="true">Отправить заявку</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="btn-wrapper">
+                <a class="btn-more" href="#"><span class="btn-more-span">Показать еще</span></a>
+            </div>
+            <div class="pages-nav">
+                <a class="pages-nav-arrow" href="#">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.83665 9.08527C7.05228 9.25777 7.08724 9.57242 6.91473 9.78805C6.74223 10.0037 6.42758 10.0386 6.21195 9.86614L6.83665 9.08527ZM6.21195 0.696478C6.42758 0.523973 6.74223 0.558934 6.91473 0.774565C7.08724 0.990196 7.05228 1.30484 6.83665 1.47735L6.21195 0.696478ZM1.28131 5.28131L0.96896 5.67174C0.850352 5.57685 0.781307 5.4332 0.781307 5.28131C0.781307 5.12941 0.850352 4.98576 0.968959 4.89087L1.28131 5.28131ZM6.83665 1.47735L1.59365 5.67174L0.968959 4.89087L6.21195 0.696478L6.83665 1.47735ZM1.59365 4.89087L6.83665 9.08527L6.21195 9.86614L0.96896 5.67174L1.59365 4.89087Z"
+                            fill="#262628" />
+                    </svg>
+                </a>
+                <div class="pages-nav-numbers">
+                    <a class="pages-nav-item" href="#">1</a>
+                    <a class="pages-nav-item" href="#">…</a>
+                    <a class="pages-nav-item" href="#">10</a>
+                    <a class="pages-nav-item active" href="#">11</a>
+                    <a class="pages-nav-item" href="#">12</a>
+                    <a class="pages-nav-item" href="#">…</a>
+                    <a class="pages-nav-item" href="#">28</a>
+                </div>
+                <a class="pages-nav-arrow" href="#">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.16335 0.914734C0.947722 0.742229 0.912762 0.427583 1.08527 0.211952C1.25777 -0.00367921 1.57242 -0.0386399 1.78805 0.133865L1.16335 0.914734ZM1.78805 9.30352C1.57242 9.47603 1.25777 9.44107 1.08527 9.22544C0.912762 9.0098 0.947723 8.69516 1.16335 8.52265L1.78805 9.30352ZM6.71869 4.71869L7.03104 4.32826C7.14965 4.42314 7.21869 4.5668 7.21869 4.71869C7.21869 4.87059 7.14965 5.01424 7.03104 5.10913L6.71869 4.71869ZM1.16335 8.52265L6.40635 4.32826L7.03104 5.10913L1.78805 9.30352L1.16335 8.52265ZM6.40635 5.10913L1.16335 0.914734L1.78805 0.133865L7.03104 4.32826L6.40635 5.10913Z"
+                            fill="#262628" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- конец секции "Каталог 2го уровня" -->
+
+    <div class="background">
+        <!-- начало секции "Как заказать?" -->
+        <section class="order">
+            <div class="wrapper">
+                <div class="title-container">
+                    <span class="title-span"></span>
+                    <h3 class="title">Как заказать?</h3>
+                    <span class="title-span"></span>
+                </div>
+                <div class="order__container">
+                    <div class="order__item">
+                        <div class="order__item-text">Оставляете заявку</div>
+                        <span class="order__item-number">01</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Получаете коммерческое предложение</div>
+                        <span class="order__item-number">02</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Подписываете договор</div>
+                        <span class="order__item-number">03</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Получаете поставку</div>
+                        <span class="order__item-number">04</span>
+                    </div>
+                    <div class="order__item">
+                        <div class="order__item-text">Оплачиваете</div>
+                        <span class="order__item-number">05</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- конец секции "Как заказать?" -->
+
+
+        <!-- начало секции "Этапы изготовления гранул" -->
+        <section class="stages js-hide">
+            <div class="wrapper">
+                <div class="title-container">
+                    <span class="title-span"></span>
+                    <h3 class="title">Этапы изготовления гранул</h3>
+                    <span class="title-span"></span>
+                </div>
+                <div class="text left text-content text-hide stages__text">
+                    <p>Переработка производственных отходов во вторичное сырье и грануляция –
+                        сравнительно
+                        молодая и перспективная сфера предпринимательства в нашей стране. Использование дешевого сырья,
+                        которое перерабатывается в полезные для хозяйства продукты, обеспечивает рентабельность
+                        подобного
+                        бизнеса. При этом большое значение имеет оборудование для производства гранул, а именно его
+                        надежность, качество изготавливаемого продукта, энергоэффективность. Компания АЛБ Групп
+                        предлагает
+                        приобрести готовые технологические линии грануляции и их отдельные составляющие по конкурентным
+                        ценам. Большой положительный опыт, десятки реализованных проектов позволяют нам делать одно из
+                        лучших предложений на российском рынке.</p>
+                    <h4>Основные этапы изготовления гранул</h4>
+                    <p>При работе с разными типами органического сырья гранулирование имеет
+                        схожие
+                        циклы. Поэтому в основе технологических линий используется одинаковое по функциям оборудование
+                        для
+                        производства топливных, травяных, зерновых гранул. Можно выделить несколько основных этапов
+                        гранулирования:
+                    <ul>
+                        <li>Первичное дробление массы;</li>
+                        <li>Сушка до необходимых показателей влажности;</li>
+                        <li>Повторное дробление до мельчайших частиц;</li>
+                        <li>Предварительная обработка полученной массы различными
+                            способами;
+                        </li>
+                        <li>Загрузка смеси в гранулятор для прессования;</li>
+                        <li>Фасовка.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="show-btn__wrapper">
+                    <a class="show-btn"><span class="show-btn__span show-btn__show-span">Показать
+                            полностью</span><span class="show-btn__span show-btn__hide-span">Скрыть</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- конец секции "Этапы изготовления гранул" -->
+
+        <!-- начало секции "Нужна наша консультация?" -->
+        <section class="consultation">
+            <div class="wrapper">
+                <div class="title-container">
+                    <span class="title-span"></span>
+                    <h3 class="title">Нужна наша <span>консультация?</span></h3>
+                    <span class="title-span"></span>
+                </div>
+                <form class="consultation__form" action="#">
+                    <div class="consultation__form-wrapper">
+                        <div class="consultation__form-wrapper-item">
+                            <div class="consultation__input-wrapper">
+                                <input id="catalog2lvl-input-name" class="consultation__form-input" type="text"
+                                    placeholder="Фамилия Имя Отчество">
+                                <label class="consultation__label-name" for="catalog2lvl-input-name"></label>
+                            </div>
+                            <div class="consultation__input-wrapper">
+                                <input id="catalog2lvl-input-phone" class="consultation__form-input" type="text"
+                                    placeholder="+7 (900) 987-65-43">
+                                <label class="consultation__label-phone" for="catalog2lvl-input-phone"></label>
+                            </div>
+
+                        </div>
+                        <div class="consultation__form-wrapper-item">
+                            <div class="consultation__textarea-wrapper">
+                                <textarea id="catalog2lvl-textarea"
+                                    class="consultation__form-input consultation__form-textarea"
+                                    placeholder="Пожалуйста, введите комментарий"></textarea>
+                                <label class="consultation__label-textarea" for="catalog2lvl-textarea"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultation__buttons">
+                        <div class="btn-wrapper">
+                            <button type="submit" class="btn">Отправить</button>
+                        </div>
+                        <div class="consultation__agreement">При отправке данных, вы даете согласие
+                            на обработку <a href="#" class="consultation__agreement-link">персональных
+                                данных</a></div>
+
+                        <div class="consultation__btn-download-wrapper">
+                            <a class="consultation__btn-download" href="#">Скачать прайс-лист</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- конец секции "Нужна наша консультация?" -->
+    </div>
+
+
+
+
+    <!-- начало секции "Подвал" -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <div class="footer__container-first">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <a href="#" class="footer__logo-link"><img src="img/logo.svg" alt=""></a>
+                        </div>
+                        <a href="tel:88314180190" class="phone" rel="nofollow">8 (831) 418-01-90</a>
+                        <div class="socials footer__socials">
+                            <a href="#" class="socials__item" rel="nofollow"><svg width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                                        stroke="#FF6D1A" />
+                                    <path
+                                        d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
+                            <a href="#" class="socials__item" rel="nofollow"> <svg width="22" height="22"
+                                    viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                                        stroke="#FF6D1A" />
+                                    <path
+                                        d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <nav class="footer__nav">
+                            <ul>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Каталог</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Акции</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Линии гранулирования</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Реализованные проекты</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <nav class="footer__nav footer__nav-second">
+                            <ul>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Каталог</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Акции</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Линии гранулирования</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Реализованные проекты</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__container-second">
+                    <div class="footer__item">
+                        <div class="footer__work">
+                            <div class="footer__work-days">ПН - ПТ</div>
+                            <div class="footer__work-hours"><span>8<sup>00</sup></span> - 18<sup>00</sup></div>
+                        </div>
+                        <div class="address">Нижний Новгород, переулок Союзный, д. 45, 4-й этаж, офис 12</div>
+                        <a href="mailto:promgrann@yandex.ru" class="mail"><span
+                                class="mail-span">promgrann@yandex.ru</span></a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__upfly">
+                            <div class="footer__upfly-icon">
+                                <img src="img/upfly.svg" alt="">
+                            </div>
+                            <div class="footer__upfly-text">Разработано в UpFly</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- конец секции "Подвал" -->
+
+    <!-- Быстрый просмотр товара -->
+    <div id="quickView" class="quick-view">
+        <h2 class="title title-big left">Механическая колонна охлаждения гранул серии SNm</h2>
+        <div class="quick-view__wrapper">
+            <div class="quick-view__image">
+                <div class="products__tiles-item-image">
+                    <ul class="products__tiles-col-list">
+                        <li class="products__tiles-col-item active">
+                            <span class="products__tiles-col-col"></span>
+                            <span class="products__tiles-col-img">
+                                <img src="img/demanded/tovar-1.jpg" alt="">
+                            </span>
+                        </li>
+                        <li class="products__tiles-col-item">
+                            <span class="products__tiles-col-col"></span>
+                            <span class="products__tiles-col-img">
+                                <img src="img/demanded/tovar-2.jpg" alt="">
+                            </span>
+                        </li>
+                        <li class="products__tiles-col-item">
+                            <span class="products__tiles-col-col"></span>
+                            <span class="products__tiles-col-img">
+                                <img src="img/demanded/tovar-3.jpg" alt="">
+                            </span>
+                        </li>
+                        <li class="products__tiles-col-item">
+                            <span class="products__tiles-col-col"></span>
+                            <span class="products__tiles-col-img">
+                                <img src="img/demanded/tovar-4.jpg" alt="">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quick-view__info">
+                <div class="text-content">
+                    <p>Смеситель СКВ предназначен для приготовления полнорационных и сбалансированных комбикормовых
+                        смесей из измельчённого зернофуража, и обогатительных элементов (БМВД, премиксы, мясокостная
+                        мука, шрот и т.д.).</p>
+                </div>
+                <div class="cost-wrapper">
+                    <div class="cost">от 3 000 000 &#8381;</div>
+                    <div class="cost-old">6 000 000 &#8381;</div>
+                </div>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn-rect">Оформить заявку</a>
+                </div>
+            </div>
+        </div>
+        <div class="characteristics-icon">
+            <div class="characteristics__item characteristics__item-major">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.3507 4.64293C17.4689 2.76253 14.8701 1.59961 11.9996 1.59961C6.25585 1.59961 1.59961 6.25585 1.59961 11.9996C1.59961 13.7473 2.03072 15.3944 2.7924 16.8402M19.3507 4.64293L19.5001 1.59961M19.3507 4.64293L16.3609 4.8586M4.595 19.3025C6.4809 21.2145 9.10185 22.3996 11.9996 22.3996C17.7434 22.3996 22.3996 17.7434 22.3996 11.9996C22.3996 10.1349 21.9089 8.38484 21.0495 6.8715M4.595 19.3025L4.42726 22.3996M4.595 19.3025L7.61436 19.1167M15.9775 11.9996C15.9775 14.1965 14.1965 15.9775 11.9996 15.9775C9.80269 15.9775 8.02173 14.1965 8.02173 11.9996C8.02173 9.80269 9.80269 8.02173 11.9996 8.02173C14.1965 8.02173 15.9775 9.80269 15.9775 11.9996ZM10.8015 6.5696L11.0411 4.8586H12.9342L13.1259 6.55431C13.8114 6.69536 14.4509 6.96263 15.019 7.33074L16.3609 6.27242L17.6789 7.54247L16.6049 8.8844C17.0147 9.48903 17.3086 10.1786 17.4545 10.9213L19.1885 11.089V12.8623L17.4545 13.0779C17.3105 13.8108 17.0225 14.492 16.6211 15.0909L17.7028 16.3849L16.3369 17.7028L15.0496 16.6485C14.4608 17.0356 13.794 17.3138 13.0779 17.4545L12.9102 19.2365H11.065L10.9213 17.4545C10.1982 17.3124 9.52537 17.0301 8.93233 16.6371L7.54247 17.7268L6.22449 16.4088L7.37472 15.0858C6.98827 14.5078 6.70728 13.8533 6.5593 13.1498L4.78671 12.8862V11.113L6.5593 10.8494C6.70421 10.1605 6.97664 9.51866 7.35076 8.94959L6.24846 7.56643L7.49454 6.34431L8.90836 7.37812C9.47446 6.99872 10.1141 6.72057 10.8015 6.5696Z"
+                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Производительность, т/час</span>
+                <span class="card-main__icons-dash"></span>
+                <span>255</span>
+            </div>
+            <div class="characteristics__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_602_3818)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.7808 1.04811C11.9036 0.983718 12.0513 0.983979 12.1738 1.0488L20.2094 5.2998C20.3428 5.37041 20.426 5.50668 20.426 5.65484V15.6585C20.426 15.8087 20.3406 15.9465 20.2044 16.0162L12.1688 20.1286C12.0489 20.1899 11.9059 20.1902 11.7858 20.1292L3.68017 16.0169C3.54319 15.9474 3.45724 15.8092 3.45724 15.6585V5.65484C3.45724 5.50615 3.54096 5.36949 3.67516 5.29911L11.7808 1.04811ZM9.72402 3.0437L16.9505 6.82343L19.1457 5.6558L11.9758 1.86275L9.72402 3.0437ZM19.5984 6.33486L17.3659 7.52231V10.5296C17.3659 10.6845 17.2752 10.8257 17.1324 10.8931L15.5674 11.6324C15.4391 11.693 15.288 11.6849 15.1673 11.6111C15.0466 11.5372 14.9733 11.408 14.9733 11.2689V8.79496L12.3904 10.1688V19.1032L19.5984 15.4143V6.33486ZM11.5629 19.1058V10.1698L4.28482 6.33205V15.4133L11.5629 19.1058ZM4.74336 5.6558L11.9758 9.46947L14.5175 8.11753L7.28152 4.32467L4.74336 5.6558ZM8.15582 3.86614L15.3856 7.65577L16.0818 7.28546L8.8492 3.5025L8.15582 3.86614ZM16.5383 7.9625L15.8009 8.35477V10.6248L16.5383 10.2764V7.9625ZM0.0437028 3.68578C0.145824 3.48625 0.394344 3.40529 0.598788 3.50496L2.51424 4.43874C2.71868 4.53841 2.80163 4.78095 2.69951 4.98048C2.59739 5.18001 2.34887 5.26097 2.14442 5.1613L1.7854 4.98628V13.9896L2.51636 14.3511C2.72021 14.4519 2.80173 14.6949 2.69844 14.8938C2.59515 15.0928 2.34615 15.1724 2.1423 15.0716L0.226852 14.1243C0.0229981 14.0235 -0.0585227 13.7805 0.0447705 13.5815C0.148064 13.3826 0.397056 13.303 0.60091 13.4038L0.957815 13.5803V4.58283L0.228974 4.22752C0.0245306 4.12785 -0.0584183 3.88531 0.0437028 3.68578ZM21.2828 16.1605C21.391 15.964 21.6418 15.8903 21.8432 15.9959L23.782 17.0124C23.9833 17.118 24.0588 17.3628 23.9506 17.5593C23.8425 17.7558 23.5916 17.8295 23.3903 17.7239L22.6147 17.3173L15.2913 21.0784L15.5916 21.245C15.7903 21.3552 15.8597 21.6018 15.7468 21.7957C15.6339 21.9896 15.3812 22.0574 15.1826 21.9472L13.2671 20.8844C13.0685 20.7742 12.999 20.5276 13.1119 20.3337C13.2248 20.1398 13.4775 20.072 13.6761 20.1823L14.437 20.6044L21.7353 16.8562L21.4515 16.7074C21.2502 16.6018 21.1747 16.357 21.2828 16.1605ZM2.69285 16.1587C2.80202 16.3547 2.72777 16.5999 2.527 16.7064L2.24784 16.8546L9.53185 20.6061L10.3294 20.1792C10.5298 20.072 10.7813 20.1436 10.8912 20.3391C11.0011 20.5347 10.9277 20.7802 10.7274 20.8874L8.74183 21.9502C8.54146 22.0574 8.28994 21.9858 8.18005 21.7903C8.07015 21.5947 8.14351 21.3492 8.34388 21.242L8.66231 21.0715L1.37453 17.3181L0.611555 17.723C0.410788 17.8295 0.159533 17.7571 0.0503604 17.5611C-0.0588121 17.3652 0.0154398 17.12 0.216207 17.0134L2.13165 15.9969C2.33242 15.8903 2.58368 15.9628 2.69285 16.1587Z"
+                            fill="#FF6D1A" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_602_3818">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <span>Габариты, см</span>
+                <span class="card-main__icons-dash"></span>
+                <span>1,2</span>
+            </div>
+            <div class="characteristics__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.40892 4.42111C5.54497 4.57111 5.53366 4.80299 5.38366 4.93904C3.36797 6.7673 2.10052 9.41751 2.10052 12.3675C2.10052 15.3174 3.36797 17.9676 5.38366 19.7959C5.53366 19.9319 5.54497 20.1638 5.40892 20.3138C5.27287 20.4638 5.04098 20.4751 4.89099 20.339C2.72768 18.3769 1.36719 15.5318 1.36719 12.3675C1.36719 9.20311 2.72768 6.358 4.89099 4.39586C5.04098 4.25981 5.27287 4.27112 5.40892 4.42111ZM18.5921 4.42111C18.7282 4.27112 18.9601 4.25981 19.1101 4.39586C21.2734 6.358 22.6339 9.20311 22.6339 12.3675C22.6339 15.5318 21.2734 18.3769 19.1101 20.339C18.9601 20.4751 18.7282 20.4638 18.5921 20.3138C18.4561 20.1638 18.4674 19.9319 18.6174 19.7959C20.6331 17.9676 21.9005 15.3174 21.9005 12.3675C21.9005 9.41751 20.6331 6.7673 18.6174 4.93904C18.4674 4.80299 18.4561 4.57111 18.5921 4.42111ZM13.4552 5.21091C13.6113 5.27689 13.7019 5.44127 13.6742 5.60849L12.8285 10.7209H15.9572C16.0971 10.7209 16.2248 10.8005 16.2864 10.926C16.348 11.0516 16.3329 11.2013 16.2473 11.3119L10.0832 19.2846C9.97582 19.4235 9.78515 19.4668 9.62836 19.3879C9.47157 19.3091 9.39263 19.1302 9.44006 18.9613L11.0586 13.1957H7.93967C7.8013 13.1957 7.67471 13.1178 7.61235 12.9943C7.54999 12.8708 7.56248 12.7226 7.64464 12.6113L13.0175 5.33092C13.1181 5.19455 13.2991 5.14493 13.4552 5.21091ZM8.66597 12.4624H11.5424C11.6571 12.4624 11.7653 12.5161 11.8346 12.6076C11.9039 12.699 11.9264 12.8176 11.8954 12.9281L10.6553 17.3458L15.2103 11.4543H12.3962C12.2885 11.4543 12.1862 11.4069 12.1166 11.3248C12.0469 11.2426 12.0169 11.134 12.0344 11.0278L12.7018 6.99366L8.66597 12.4624ZM7.19096 6.42574C7.32694 6.5758 7.31552 6.80768 7.16546 6.94366C5.6923 8.27858 4.76611 10.2135 4.76611 12.3675C4.76611 14.5214 5.6923 16.4563 7.16546 17.7913C7.31552 17.9272 7.32694 18.1591 7.19096 18.3092C7.05498 18.4592 6.8231 18.4707 6.67304 18.3347C5.05221 16.8659 4.03277 14.7361 4.03277 12.3675C4.03277 9.99884 5.05221 7.86898 6.67304 6.40024C6.8231 6.26426 7.05498 6.27568 7.19096 6.42574ZM16.8101 6.42574C16.9461 6.27568 17.1779 6.26426 17.328 6.40024C18.9488 7.86898 19.9683 9.99884 19.9683 12.3675C19.9683 14.7361 18.9488 16.8659 17.328 18.3347C17.1779 18.4707 16.9461 18.4592 16.8101 18.3092C16.6741 18.1591 16.6855 17.9272 16.8356 17.7913C18.3087 16.4563 19.2349 14.5214 19.2349 12.3675C19.2349 10.2135 18.3087 8.27858 16.8356 6.94366C16.6855 6.80768 16.6741 6.5758 16.8101 6.42574Z"
+                        fill="#FF6D1A" />
+                </svg>
+                <span>Мощность, кВт</span>
+                <span class="card-main__icons-dash"></span>
+                <span>2</span>
+            </div>
+            <div class="characteristics__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.800391 2.80078C1.0213 2.80078 1.20039 2.97987 1.20039 3.20078V11.9935H4.00444C4.22536 11.9935 4.40444 12.1726 4.40444 12.3935C4.40444 12.6144 4.22536 12.7935 4.00444 12.7935H0.800391C0.579477 12.7935 0.400391 12.6144 0.400391 12.3935V3.20078C0.400391 2.97987 0.579477 2.80078 0.800391 2.80078ZM23.2004 2.80078C23.4213 2.80078 23.6004 2.97987 23.6004 3.20078V12.3935C23.6004 12.6144 23.4213 12.7935 23.2004 12.7935H19.9396C19.7187 12.7935 19.5396 12.6144 19.5396 12.3935C19.5396 12.1726 19.7187 11.9935 19.9396 11.9935H22.8004V3.20078C22.8004 2.97987 22.9795 2.80078 23.2004 2.80078ZM19.2635 3.72888C19.4217 3.57469 19.6749 3.57793 19.8291 3.73613L21.5636 5.51567C21.6625 5.61712 21.7104 5.74881 21.7104 5.87714C21.7104 6.00548 21.6625 6.13717 21.5636 6.23862L19.8291 8.01816C19.6749 8.17636 19.4217 8.1796 19.2635 8.02541C19.1053 7.87121 19.102 7.61797 19.2562 7.45977L20.4089 6.27714H3.70529L4.85798 7.45977C5.01217 7.61797 5.00892 7.87121 4.85072 8.02541C4.69252 8.1796 4.43928 8.17636 4.28508 8.01816L2.5506 6.23862C2.45172 6.13718 2.40383 6.00548 2.40383 5.87715C2.40383 5.74881 2.45172 5.61712 2.5506 5.51567L4.28508 3.73613C4.43928 3.57793 4.69252 3.57469 4.85072 3.72888C5.00892 3.88308 5.01217 4.13632 4.85798 4.29452L3.70529 5.47714H20.4089L19.2562 4.29452C19.102 4.13632 19.1053 3.88308 19.2635 3.72888ZM0.400391 14.8081C0.400391 14.5871 0.579477 14.4081 0.800391 14.4081H23.2004C23.4213 14.4081 23.6004 14.5871 23.6004 14.8081V20.8008C23.6004 21.0217 23.4213 21.2008 23.2004 21.2008H0.800391C0.579477 21.2008 0.400391 21.0217 0.400391 20.8008V14.8081ZM1.20039 15.2081V20.4008H22.8004V15.2081H20.3396V17.3971C20.3396 17.6181 20.1605 17.7971 19.9396 17.7971C19.7187 17.7971 19.5396 17.6181 19.5396 17.3971V15.2081H17.8728V16.699C17.8728 16.9199 17.6937 17.099 17.4728 17.099C17.2519 17.099 17.0728 16.9199 17.0728 16.699V15.2081H15.0941V16.699C15.0941 16.9199 14.915 17.099 14.6941 17.099C14.4731 17.099 14.2941 16.9199 14.2941 16.699V15.2081H12.5989V17.3971C12.5989 17.6181 12.4198 17.7971 12.1989 17.7971C11.978 17.7971 11.7989 17.6181 11.7989 17.3971V15.2081H9.87685V16.699C9.87685 16.9199 9.69776 17.099 9.47685 17.099C9.25593 17.099 9.07685 16.9199 9.07685 16.699V15.2081H7.15482V16.699C7.15482 16.9199 6.97573 17.099 6.75482 17.099C6.53391 17.099 6.35482 16.9199 6.35482 16.699V15.2081H4.40444V17.3971C4.40444 17.6181 4.22536 17.7971 4.00444 17.7971C3.78353 17.7971 3.60444 17.6181 3.60444 17.3971V15.2081H1.20039Z"
+                        fill="#FF6D1A" />
+                </svg>
+                <span>Длина, м</span>
+                <span class="card-main__icons-dash"></span>
+                <span>255</span>
+            </div>
+            <div class="characteristics__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.50579 6.01135C3.53676 6.00381 3.56852 6 3.60039 6H20.3313C20.7029 6 21.1318 6.07236 21.4876 6.35002C21.9939 6.74518 22.7483 7.55399 23.2053 9.05509C23.4444 9.84012 23.6004 10.809 23.6004 12C23.6004 13.191 23.4444 14.1599 23.2053 14.9449C22.7483 16.446 21.9939 17.2548 21.4876 17.65C21.1318 17.9276 20.7029 18 20.3313 18H3.60039C3.56852 18 3.53676 17.9962 3.50579 17.9887L3.60039 17.6C3.50579 17.9887 3.50613 17.9887 3.50579 17.9887L3.5044 17.9883L3.50275 17.9879L3.49867 17.9869L3.48747 17.9839C3.47867 17.9815 3.46722 17.9783 3.45332 17.9741C3.42551 17.9657 3.38781 17.9534 3.34165 17.9364C3.24935 17.9023 3.1229 17.8491 2.97388 17.7692C2.6755 17.6092 2.28684 17.3425 1.90181 16.9106C1.12566 16.04 0.400391 14.5398 0.400391 12C0.400391 9.46019 1.12566 7.96001 1.90181 7.0894C2.28684 6.65751 2.6755 6.3908 2.97388 6.23082C3.1229 6.15091 3.24935 6.09766 3.34165 6.06361C3.38781 6.04658 3.42551 6.03433 3.45332 6.02593C3.46722 6.02173 3.47867 6.01849 3.48747 6.0161L3.49867 6.01313L3.50275 6.0121L3.5044 6.01169L3.50579 6.01135C3.50613 6.01127 3.50579 6.01135 3.60039 6.4L3.50579 6.01135ZM4.94291 6.8H6.66899C6.7133 6.83672 6.77291 6.88935 6.84347 6.95955C7.01472 7.12993 7.25097 7.40426 7.49007 7.80688C7.64607 8.06958 7.80438 8.38873 7.94676 8.7716H6.13975C5.81505 7.84805 5.36937 7.22071 4.94291 6.8ZM6.37018 9.5716C6.52685 10.2513 6.62119 11.0535 6.62119 12C6.62119 12.9465 6.52685 13.7487 6.37018 14.4284H8.19199C8.35601 13.7646 8.46439 12.9621 8.46439 12C8.46439 11.0379 8.35601 10.2354 8.19199 9.5716H6.37018ZM9.0138 9.5716C9.16768 10.2588 9.26439 11.0635 9.26439 12C9.26439 12.9365 9.16768 13.7412 9.0138 14.4284H9.72459C9.8823 13.7558 9.98759 12.9508 9.98759 12C9.98759 11.0492 9.8823 10.2442 9.72459 9.5716H9.0138ZM10.5444 9.5716C10.6928 10.2641 10.7876 11.0704 10.7876 12C10.7876 12.9296 10.6928 13.7359 10.5444 14.4284L18.2434 14.4284C18.4224 13.7384 18.5444 12.9279 18.5444 12C18.5444 11.0721 18.4224 10.2616 18.2434 9.5716H10.5444ZM17.9943 8.7716H10.3362C10.1831 8.27669 10.0051 7.8564 9.82516 7.50538C9.68229 7.22663 9.53868 6.99245 9.40625 6.8H16.9234C16.9634 6.84975 17.0132 6.91423 17.0704 6.99329C17.2307 7.2153 17.4481 7.55174 17.6665 7.9995C17.7779 8.22792 17.8897 8.4854 17.9943 8.7716ZM19.0676 9.5716C19.2348 10.2771 19.3444 11.0875 19.3444 12C19.3444 12.9125 19.2348 13.7229 19.0676 14.4284H19.7801C19.9645 13.7398 20.09 12.9298 20.09 12C20.09 11.0702 19.9645 10.2602 19.7801 9.5716H19.0676ZM19.5227 8.7716H18.8413C18.701 8.34732 18.5435 7.97272 18.3855 7.64877C18.2202 7.30994 18.0544 7.0267 17.9072 6.8H18.4075C18.4497 6.84992 18.5029 6.91554 18.5642 6.99677C18.7302 7.21683 18.9552 7.55078 19.1812 7.99655C19.2973 8.22537 19.4137 8.48379 19.5227 8.7716ZM20.6058 9.5716C20.7776 10.2762 20.89 11.0864 20.89 12C20.89 12.9136 20.7776 13.7238 20.6058 14.4284H22.5198C22.6893 13.7749 22.8004 12.975 22.8004 12C22.8004 11.025 22.6893 10.2251 22.5198 9.5716H20.6058ZM22.2586 8.7716H20.3727C20.2258 8.34093 20.0606 7.96173 19.8947 7.63469C19.7261 7.3021 19.5569 7.02369 19.406 6.8H20.3313C20.6124 6.8 20.8366 6.85673 20.9954 6.98068C21.3284 7.24061 21.8588 7.77669 22.2586 8.7716ZM22.2586 15.2284H20.3727C20.2258 15.6591 20.0606 16.0383 19.8947 16.3653C19.7261 16.6979 19.5569 16.9763 19.406 17.2H20.3313C20.6124 17.2 20.8366 17.1433 20.9954 17.0193C21.3284 16.7594 21.8588 16.2233 22.2586 15.2284ZM18.4075 17.2C18.4497 17.1501 18.5029 17.0845 18.5642 17.0032C18.7302 16.7832 18.9552 16.4492 19.1812 16.0035C19.2973 15.7746 19.4137 15.5162 19.5227 15.2284H18.8413C18.701 15.6527 18.5435 16.0273 18.3855 16.3512C18.2202 16.6901 18.0544 16.9733 17.9072 17.2H18.4075ZM16.9234 17.2C16.9634 17.1502 17.0132 17.0858 17.0704 17.0067C17.2307 16.7847 17.4481 16.4483 17.6665 16.0005C17.7779 15.7721 17.8897 15.5146 17.9943 15.2284L10.3362 15.2284C10.1831 15.7233 10.0051 16.1436 9.82516 16.4946C9.68229 16.7734 9.53868 17.0075 9.40625 17.2H16.9234ZM8.38721 17.2C8.42537 17.1594 8.4733 17.1057 8.52851 17.0384C8.68406 16.8487 8.89758 16.5505 9.11322 16.1297C9.24331 15.8759 9.37468 15.5765 9.49465 15.2284H8.79422C8.61331 15.7784 8.39729 16.2322 8.17792 16.6016C8.0395 16.8347 7.90036 17.0331 7.76891 17.2H8.38721ZM6.66899 17.2H4.94291C5.36937 16.7793 5.81505 16.152 6.13975 15.2284H7.94676C7.80438 15.6113 7.64607 15.9304 7.49007 16.1931C7.25097 16.5957 7.01472 16.8701 6.84347 17.0404C6.77291 17.1106 6.7133 17.1633 6.66899 17.2ZM8.38721 6.8C8.42537 6.84062 8.4733 6.89428 8.52851 6.96159C8.68406 7.15127 8.89758 7.44954 9.11322 7.87028C9.24331 8.1241 9.37468 8.42346 9.49465 8.7716H8.79422C8.61331 8.22165 8.39729 7.7678 8.17792 7.39839C8.0395 7.16531 7.90036 6.9669 7.76891 6.8H8.38721ZM8.28943 6.7028C8.2893 6.70269 8.28961 6.70295 8.29033 6.70359L8.28943 6.7028ZM3.59545 6.82288C3.53539 6.84608 3.45186 6.88227 3.3519 6.93587C3.12528 7.05738 2.81394 7.26845 2.49897 7.62176C1.87512 8.32153 1.20039 9.62135 1.20039 12C1.20039 14.3787 1.87512 15.6785 2.49897 16.3782C2.81394 16.7315 3.12528 16.9426 3.3519 17.0641C3.45186 17.1177 3.53539 17.1539 3.59545 17.1771C3.61897 17.1672 3.64623 17.1551 3.67674 17.1404C3.80446 17.079 3.98914 16.9726 4.19695 16.7983C4.60916 16.4524 5.12822 15.8256 5.4673 14.7119C5.67848 14.0182 5.82119 13.1311 5.82119 12C5.82119 10.8689 5.67848 9.98175 5.4673 9.2881C5.12822 8.17437 4.60916 7.54763 4.19695 7.20174C3.98914 7.02737 3.80446 6.92103 3.67674 6.85956C3.64623 6.84487 3.61898 6.83275 3.59545 6.82288ZM3.56311 8.5715C3.52565 8.5699 3.46303 8.58566 3.4102 8.67607C3.02182 9.34074 2.54439 10.4648 2.54439 11.9773C2.54439 13.4977 3.0269 14.6257 3.41636 15.289C3.46878 15.3783 3.53089 15.3942 3.56788 15.3928C3.60494 15.3914 3.66593 15.3707 3.71168 15.2777C4.0378 14.614 4.43239 13.5014 4.43239 12C4.43239 10.4973 4.03714 9.36818 3.70983 8.69045C3.6637 8.59493 3.60112 8.57313 3.56311 8.5715ZM3.59728 7.77223C3.947 7.78718 4.26364 7.99763 4.43022 8.34253C4.79908 9.1063 5.23239 10.3541 5.23239 12C5.23239 13.6451 4.79945 14.878 4.42966 15.6305C4.26174 15.9722 3.94576 16.1792 3.59795 16.1922C3.25006 16.2053 2.9194 16.0226 2.7265 15.6941C2.28306 14.9389 1.74439 13.6721 1.74439 11.9773C1.74439 10.2914 2.27739 9.02905 2.71947 8.27247C2.91339 7.9406 3.24702 7.75726 3.59728 7.77223Z"
+                        fill="#FF6D1A" />
+                </svg>
+                <span>Размер вальцов, см</span>
+                <span class="card-main__icons-dash"></span>
+                <span>255</span>
+            </div>
+            <div class="characteristics__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.80078 4.43181V20.5825M4.80078 4.43181C4.80078 4.43181 5.76503 1.59961 12.4008 1.59961C19.0365 1.59961 20.0008 4.43181 20.0008 4.43181M4.80078 4.43181C4.80078 4.43181 5.20401 7.22816 12.4008 7.22816C19.5976 7.22816 20.0008 4.43181 20.0008 4.43181M4.80078 20.5825C4.80078 20.5825 6.48383 23.1996 12.4008 23.1996C18.3177 23.1996 20.0008 20.5825 20.0008 20.5825M4.80078 20.5825C4.80078 20.5825 5.01153 19.7784 6.29723 19.041M20.0008 20.5825V4.43181M20.0008 20.5825C20.0008 20.5825 19.8233 19.9055 18.8008 19.2242M7.60078 18.4721C8.11379 18.3032 8.71899 18.1556 9.43251 18.0456M17.2008 18.4721C16.6878 18.3032 16.0826 18.1556 15.3691 18.0456M13.6008 17.8697C13.2232 17.8503 12.8236 17.8399 12.4008 17.8399C11.9779 17.8399 11.5784 17.8503 11.2008 17.8697"
+                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Объем, м3</span>
+                <span class="card-main__icons-dash"></span>
+                <span>255</span>
+            </div>
+            <div class="characteristics__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.2718 1.60078C7.60906 1.60078 7.0718 2.13804 7.0718 2.80078V7.40321H7.82556V3.48742C7.82556 2.82468 8.36282 2.28742 9.02556 2.28742H14.7196C15.3823 2.28742 15.9196 2.82468 15.9196 3.48742V7.40321H16.6518V2.80078C16.6518 2.13804 16.1145 1.60078 15.4518 1.60078H8.2718ZM17.4518 7.40321V2.80078C17.4518 1.69621 16.5563 0.800781 15.4518 0.800781H8.2718C7.16723 0.800781 6.2718 1.69621 6.2718 2.80078V7.40321H6.0952C5.19773 7.40321 4.41015 8.00105 4.16885 8.86548L0.8756 20.663C0.519701 21.938 1.47825 23.2008 2.80195 23.2008H20.954C22.2899 23.2008 23.2503 21.9162 22.8723 20.6349L19.3923 8.83737C19.1415 7.98696 18.3607 7.40321 17.4741 7.40321H17.4518ZM15.1196 7.40321V3.48742C15.1196 3.26651 14.9405 3.08742 14.7196 3.08742H9.02556C8.80465 3.08742 8.62556 3.26651 8.62556 3.48742V7.40321H15.1196ZM6.0952 8.20321C5.55672 8.20321 5.08417 8.56191 4.93939 9.08057L1.64614 20.8781C1.4326 21.6431 2.00773 22.4008 2.80195 22.4008H20.954C21.7556 22.4008 22.3318 21.63 22.105 20.8613L18.625 9.0637C18.4745 8.55346 18.006 8.20321 17.4741 8.20321H6.0952ZM11.3547 11.2973C11.5223 11.4412 11.5415 11.6938 11.3976 11.8614L8.75126 14.9431L11.7994 18.5423C11.9422 18.7109 11.9212 18.9633 11.7527 19.106C11.5841 19.2488 11.3317 19.2279 11.1889 19.0593L8.62556 16.0325V18.8008C8.62556 19.0217 8.44647 19.2008 8.22556 19.2008C8.00465 19.2008 7.82556 19.0217 7.82556 18.8008V11.6008C7.82556 11.3799 8.00465 11.2008 8.22556 11.2008C8.44647 11.2008 8.62556 11.3799 8.62556 11.6008V13.8615L10.7907 11.3402C10.9346 11.1726 11.1872 11.1534 11.3547 11.2973ZM15.0181 12.357C14.5579 11.8908 13.8054 11.8908 13.3452 12.357C13.128 12.577 13.0063 12.8736 13.0063 13.1827V17.3154C13.0063 17.6994 13.2053 18.056 13.5321 18.2576C13.9141 18.4932 14.4005 18.4748 14.7637 18.2111L15.0139 18.0294C15.0803 17.9812 15.1196 17.9041 15.1196 17.8221V16.0364C15.1196 15.8155 14.9405 15.6364 14.7196 15.6364H14.3974C14.1765 15.6364 13.9974 15.4573 13.9974 15.2364C13.9974 15.0155 14.1765 14.8364 14.3974 14.8364H14.7196C15.3823 14.8364 15.9196 15.3737 15.9196 16.0364V17.8221C15.9196 18.1602 15.7577 18.478 15.484 18.6767L15.2338 18.8584C14.6082 19.3127 13.7702 19.3444 13.1121 18.9385C12.5491 18.5912 12.2063 17.977 12.2063 17.3154V13.1827C12.2063 12.6633 12.4109 12.1647 12.7758 11.795C13.5492 11.0115 14.814 11.0115 15.5875 11.795L15.8043 12.0147C15.9595 12.1719 15.9578 12.4252 15.8006 12.5804C15.6434 12.7356 15.3901 12.7339 15.2349 12.5767L15.0181 12.357Z"
+                        fill="#FF6D1A" />
+                </svg>
+                <span>Масса, кг</span>
+                <span class="card-main__icons-dash"></span>
+                <span>255</span>
+            </div>
+        </div>
+        <a href="javascript:void(0)" data-fancybox-close class="btn-close"></a>
+    </div>
+    <!-- конец Быстрый просмотр товара -->
+
+    <!-- pop-up Оформить заявку -->
+    <div id="makeRequest" class="make-request pop-up-request">
+        <div class="pop-up-request__container">
+            <div class="pop-up-request__wrapper">
+                <h2 class="title">Оформить <span>заявку</span></h2>
+                <form class="consultation__form" action="#">
+                    <div class="consultation__form-wrapper">
+                        <div class="consultation__form-wrapper-item">
+                            <div class="consultation__input-wrapper">
+                                <input id="make-request-input-name" class="consultation__form-input" type="text"
+                                    placeholder="Фамилия Имя Отчество">
+                                <label class="consultation__label-name" for="make-request-input-name"></label>
+                            </div>
+                            <div class="consultation__input-wrapper">
+                                <input id="make-request-input-phone" class="consultation__form-input" type="text"
+                                    placeholder="+7 (900) 987-65-43">
+                                <label class="consultation__label-phone" for="make-request-input-phone"></label>
+                            </div>
+
+                        </div>
+                        <div class="consultation__form-wrapper-item">
+                            <div class="consultation__textarea-wrapper">
+                                <textarea id="make-request-textarea"
+                                    class="consultation__form-input consultation__form-textarea"
+                                    placeholder="Пожалуйста, введите комментарий"></textarea>
+                                <label class="consultation__label-textarea" for="make-request-textarea"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultation__buttons">
+                        <div class="btn-wrapper">
+                            <button type="submit" class="btn">Отправить</button>
+                        </div>
+                        <div class="consultation__agreement">При отправке данных, вы даете согласие
+                            на обработку <a href="#" class="consultation__agreement-link">персональных
+                                данных</a></div>
+                    </div>
+                </form>
+            </div>
+
+            <a href="javascript:void(0)" data-fancybox-close class="btn-close"></a>
+        </div>
+    </div>
+    <!-- конец pop-up Оформить заявку -->
+
+    <!-- нижняя менюшка на планшетах/телефонах -->
+    <section class="buttom-menu">
+        <div class="buttom-menu__wrapper">
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/home.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Главная</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/catalog.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Каталог</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/granulation.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Линии
+                        гранулирования</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/contacts.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Контакты</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- конец нижняя менюшка на планшетах/телефонах -->
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/full-main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>О компании</title>
+</head>
+
+<body>
+    <!-- начало блока "Шапка" -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__container">
+                <div class="header__item header__item-burger">
+                    <div class="header__burger">
+                        <a href="#" class="header__burger-btn">
+                            <span class="header__burger-wrapper">
+                                <span class="header__burger-span"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item header__item-logo">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link"><img src="img/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="header__item header__item-search">
+                    <form action="#">
+                        <div class="header__form-search-wrapper">
+                            <input class="header__input-search" type="text">
+                            <input class="header__input-btn" id="header-search" type="submit"></input>
+                            <label class="header__input-label" for="header-search"><img src="img/search.svg"
+                                    alt=""></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__item">
+                    <div class="work">
+                        <div class="work-days">ПН - ПТ</div>
+                        <div class="work-hours"><span>8<sup>00</sup></span> - 18<sup>00</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__item-socials">
+                        <a href="#" class="socials__item" rel="nofollow">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                                    stroke="#FF6D1A" />
+                                <path
+                                    d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__item" rel="nofollow">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                                    stroke="#FF6D1A" />
+                                <path
+                                    d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                                    stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item header__item-mobile">
+                    <div class="header__item-phone">
+                        <a href="tel:88314180190" class="phone" rel="nofollow">8 (831) 418-01-90</a>
+                        <a href="#" class="header__call-text">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9872 18.0823L17.6623 17.3054C18.092 16.8751 18.3333 16.2922 18.3333 15.6846C18.3333 15.077 18.092 14.4942 17.6623 14.0639C17.6393 14.0409 15.8543 12.6701 15.8543 12.6701C15.4259 12.263 14.8569 12.0364 14.2654 12.0372C13.6739 12.038 13.1055 12.2663 12.6782 12.6745L11.2642 13.8639C10.1099 13.387 9.06141 12.6873 8.17885 11.8047C7.29629 10.9222 6.59707 9.87436 6.12136 8.72133L7.3084 7.31423C7.71771 6.88778 7.94665 6.32028 7.94761 5.72969C7.94858 5.13909 7.72151 4.57085 7.31359 4.14307C7.31359 4.14307 5.93885 2.36346 5.91585 2.3405C5.49257 1.91522 4.91866 1.67325 4.31812 1.66688C3.71759 1.6605 3.13866 1.89023 2.70641 2.30643L1.85322 3.04701C-3.18723 8.88426 7.66673 19.6352 13.7073 19.442C14.3172 19.4455 14.9217 19.327 15.4851 19.0934C16.0484 18.8599 16.5592 18.5161 16.9872 18.0823Z"
+                                    fill="#FF6D1A" />
+                                <path
+                                    d="M11.6666 4.16679C12.2222 4.0742 13.6111 4.16679 14.7222 5.2779C15.8333 6.38901 15.9259 7.96308 15.8333 8.61122"
+                                    stroke="#FF6D1A" stroke-linecap="round" />
+                                <path
+                                    d="M11.1111 0.833443C11.6666 0.740851 14.859 0.719592 16.9444 2.80504C19.0298 4.89048 19.2592 7.96309 19.1666 8.61123"
+                                    stroke="#FF6D1A" stroke-linecap="round" />
+                            </svg>
+                            <span class="header__call-text-span">Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__mobile-phone">
+                        <a href="tel:88314180190" class="header__mobile-phone-link" rel="nofollow"><img
+                                src="img/mobile-phone.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__menu-nav">
+                        <li class="header__meni-item">
+                            <div class="header__menu-catalog">
+                                <div class="header__menu-catalog-burger">
+                                    <span class="header__menu-catalog-burger-span"></span>
+                                    <div class="header__menu-catalog-submenu-wrapper">
+                                        <ul class="header__menu-catalog-submenu">
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Комбикормовое оборудование
+                                                </li>
+                                            </a>
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Транспортирующее оборудование
+                                                </li>
+                                            </a>
+                                            <a href="catalog-2lvl.html" class="header__menu-catalog-submenu-item">
+                                                <li>Запасные части</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="header__menu-link header__menu-burger-text"
+                                    href="catalog-1lvl.html">Каталог</a>
+                            </div>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Акции</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Ремонт и модернизация</a>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Линии гранулирования</a>
+                        </li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Оплата и доставка</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">О компании</a></li>
+                        <li class="header__meni-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- конец блока "Шапка" -->
+
+    <!-- начало секции "Навигация" -->
+    <section class="navigation">
+        <div class="wrapper">
+            <nav class="navigation__nav">
+                <ul class="navigation__nav-list">
+                    <li class="navigation__nav-item navigation__nav-link"><a href="index.html">Главная</a></li>
+                    <li class="navigation__nav-item navigation__nav-link"><a href="catalog-1lvl.html">Каталог 1
+                            уровня</a></li>
+                    <li class="navigation__nav-item"><span>Каталог 2 уровня</span></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="navigation__back"><span class="navigation__back-span">Назад</span></a>
+        </div>
+    </section>
+    <!-- конец секции "Навигация" -->
+
+    <!-- начало секции "О компании" -->
+    <section class="about-company">
+        <div class="wrapper">
+            <h1 class="title title-big left">О компании</h1>
+            <div class="about-company__wrapper">
+                <div class="text left">
+                    <p>
+                        ООО «ГранМастер» — поставщик оборудования для производства рассыпного, гранулированного
+                        комбикорма и
+                        гранулирования древесных отходов. Основным потребителем нашей продукции являются: частные
+                        предприятия и фермерские хозяйства, а так же свинокомплексы и птицефабрики с большим объемом
+                        потребления комбикормов. Наша компания действует на рынке с 2014 года в г. Н. Новгород. Завод
+                        выпускает более 100 моделей комбикормового и зерно транспортного оборудования.
+                    </p>
+                </div>
+                <div class="about-company__video">
+                    <img src="img/about-company/video.jpg" alt="">
+                    <a class="about-company__video-link" fancybox-data
+                        href="https://www.youtube.com/embed/uHKfrz65KSU"></a>
+                </div>
+            </div>
+            <div class="about-company__info">
+                <div class="text">
+                    <p>За качество отвечаем своей репутацией! Более 1000 клиентов по всей России! Специалисты
+                        с
+                        радостью помогут подобрать нужное оборудование, рассчитают доставку до Вашего города, и ответят
+                        на
+                        интересующие Вас вопросы. Доставку и монтаж осуществляем по всей России и странам СНГ.</p>
+                </div>
+                <div class="about__wrapper">
+                    <div class="about__item">
+                        <div class="about__item-image">
+                            <img src="img/about/company-1.jpg" alt="">
+                        </div>
+                        <div class="about__item-title">Гибкие цены под запросы клиента</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-image">
+                            <img src="img/about/company-2.jpg" alt="">
+                        </div>
+                        <div class="about__item-title">Высокое качество исполнения</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-image">
+                            <img src="img/about/company-3.jpg" alt="">
+                        </div>
+                        <div class="about__item-title">Многолетний опыт спецалистов</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-image">
+                            <img src="img/about/company-4.jpg" alt="">
+                        </div>
+                        <div class="about__item-title">Предлагаем оптимальный состав оборудования</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-image">
+                            <img src="img/about/company-5.jpg" alt="">
+                        </div>
+                        <div class="about__item-title">Мы постоянно в контакте со своими заказчиками</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- конец секции "О компании" -->
+
+    <!-- начало секции "Наше производство" -->
+    <section class="project-gallery">
+        <div class="wrapper">
+            <div class="title-container">
+                <span class="title-span"></span>
+                <h3 class="title">Наше производство</h3>
+                <span class="title-span"></span>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="project-gallery__wrapper">
+                <a class="project-gallery__item" data-fancybox="project-gallery"
+                    href="img/granulation-card/granulation-card-1.jpg">
+                    <img src="img/granulation-card/granulation-card-1.jpg" alt="">
+                </a>
+                <a class="project-gallery__item" data-fancybox="project-gallery"
+                    href="img/granulation-card/granulation-card-2.jpg">
+                    <img src="img/granulation-card/granulation-card-2.jpg" alt="">
+                </a>
+                <a class="project-gallery__item" data-fancybox="project-gallery"
+                    href="img/granulation-card/granulation-card-3.jpg">
+                    <img src="img/granulation-card/granulation-card-3.jpg" alt="">
+                </a>
+                <a class="project-gallery__item" data-fancybox="project-gallery"
+                    href="img/granulation-card/granulation-card-3.jpg">
+                    <img src="img/granulation-card/granulation-card-3.jpg" alt="">
+                </a>
+                <a class="project-gallery__item" data-fancybox="project-gallery"
+                    href="img/granulation-card/granulation-card-1.jpg">
+                    <img src="img/granulation-card/granulation-card-1.jpg" alt="">
+                </a>
+                <a class="project-gallery__item" data-fancybox="project-gallery"
+                    href="img/granulation-card/granulation-card-2.jpg">
+                    <img src="img/granulation-card/granulation-card-2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn-more" href="#"><span class="btn-more-span">Показать еще</span></a>
+        </div>
+    </section>
+    <!-- конец секции "Наше производство" -->
+
+    <!-- начало секции "Уже несколько лет мы строим заводы и линии гранулирования" -->
+    <section class="thanks-letters">
+        <div class="wrapper">
+            <div class="title-container">
+                <span class="title-span"></span>
+                <h3 class="title">Уже несколько лет мы строим заводы <span>и&nbsp;линии
+                        гранулирования</span></h3>
+                <span class="title-span"></span>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="swiper swiper-thanks-letters">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thanks-letters__item">
+                            <a class="thanks-letters__item-image" data-fancybox="thanks-letters-gallery"
+                                href="img/thanks-letters/thanks-letters-1.jpg">
+                                <img src="img/thanks-letters/thanks-letters-1.jpg" alt="">
+                            </a>
+                            <div class="thanks-letters__item-info">
+                                <div class="thanks-letters__item-title">
+                                    Объяснили все От и До
+                                </div>
+                                <span class="title-span"></span>
+                                <div class="thanks-letters__item-text">С самого момента обращения и до сегодняшнего дня
+                                    оперативно решались все наши вопросы. Для нас разработали оборудование с учетом
+                                    индивидуальных особенностей производства из нашего сырья. Благодаря этому мы
+                                    максимально используем древесину на нашем предприятии, не остается практически
+                                    никаких отходов.
+                                    Все оборудование нам поставили вовремя в полной комплектации, сами установили и
+                                    научили наших сотрудников работать.</div>
+                                <div class="thanks-letters__item-author">
+                                    <p>ООО “Курочки”, Нижегородская область</p>
+                                    <p>Директор Курочкин В. А.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thanks-letters__item">
+                            <a class="thanks-letters__item-image" data-fancybox="thanks-letters-gallery"
+                                href="img/thanks-letters/thanks-letters-2.png">
+                                <img src="img/thanks-letters/thanks-letters-2.png" alt="">
+                            </a>
+                            <div class="thanks-letters__item-info">
+                                <div class="thanks-letters__item-title">
+                                    Объяснили все От и До
+                                </div>
+                                <span class="title-span"></span>
+                                <div class="thanks-letters__item-text">С самого момента обращения и до сегодняшнего дня
+                                    оперативно решались все наши вопросы. Для нас разработали оборудование с учетом
+                                    индивидуальных особенностей производства из нашего сырья. Благодаря этому мы
+                                    максимально используем древесину на нашем предприятии, не остается практически
+                                    никаких отходов.
+                                    Все оборудование нам поставили вовремя в полной комплектации, сами установили и
+                                    научили наших сотрудников работать. С самого момента обращения и до сегодняшнего дня
+                                    оперативно решались все наши вопросы. Для нас разработали оборудование с учетом
+                                    индивидуальных особенностей производства из нашего сырья. Благодаря этому мы
+                                    максимально используем древесину на нашем предприятии, не остается практически
+                                    никаких отходов.
+                                    Все оборудование нам поставили вовремя в полной комплектации, сами установили и
+                                    научили наших сотрудников работать.</div>
+                                <div class="thanks-letters__item-author">
+                                    <p>ООО “Курочки”, Нижегородская область</p>
+                                    <p>Директор Курочкин В. А.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="btn-wrapper">
+                <a href="javascript:void(0)" class="btn">Ко всем отзывам</a>
+            </div>
+        </div>
+    </section>
+    <!-- конец секции "Уже несколько лет мы строим заводы и линии гранулирования" -->
+
+    <!-- начало секции "Реализованные проекты" -->
+    <section class="other-project">
+        <div class="wrapper">
+            <div class="title-container">
+                <span class="title-span"></span>
+                <h3 class="title title-max-width">Реализованные проекты</h3>
+                <span class="title-span"></span>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="swiper swiper-other-project">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="projects__tiles-item other-projects__tiles-item" href="javascript:void(0)">
+                            <div class="projects__tiles-image other-projects__tiles-image">
+                                <img src="img/projects-list/projects-list-4.jpg" alt="">
+                                <div class="projects__tiles-location other-projects__tiles-location">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3346 6.13976C10.3346 7.43137 9.56045 8.81768 8.61393 9.91794C8.1481 10.4594 7.66003 10.9085 7.24517 11.2178C7.03728 11.3727 6.85585 11.4866 6.71143 11.5593C6.55125 11.64 6.48881 11.6432 6.5013 11.6432V12.6432C6.73046 12.6432 6.96594 12.5508 7.16122 12.4524C7.37227 12.3461 7.60387 12.1977 7.84285 12.0195C8.32174 11.6625 8.86283 11.162 9.37201 10.5701C10.3755 9.40363 11.3346 7.7882 11.3346 6.13976H10.3346ZM6.5013 11.6432C6.5138 11.6432 6.45135 11.64 6.29117 11.5593C6.14675 11.4866 5.96533 11.3727 5.75743 11.2178C5.34258 10.9085 4.8545 10.4594 4.38868 9.91794C3.44215 8.81768 2.66797 7.43137 2.66797 6.13976H1.66797C1.66797 7.7882 2.62712 9.40363 3.63059 10.5701C4.13977 11.162 4.68086 11.6625 5.15976 12.0195C5.39874 12.1977 5.63033 12.3461 5.84138 12.4524C6.03666 12.5508 6.27214 12.6432 6.5013 12.6432V11.6432ZM2.66797 6.13976C2.66797 4.05252 4.37926 2.35156 6.5013 2.35156V1.35156C3.83687 1.35156 1.66797 3.49039 1.66797 6.13976H2.66797ZM6.5013 2.35156C8.62334 2.35156 10.3346 4.05252 10.3346 6.13976H11.3346C11.3346 3.49039 9.16573 1.35156 6.5013 1.35156V2.35156Z"
+                                            fill="white" />
+                                        <circle r="1.625" transform="matrix(-1 0 0 1 6.5 5.91406)" stroke="white" />
+                                    </svg>
+                                    <span
+                                        class="projects__tiles-region other-projects__tiles-region">Кабардино-Балкарская
+                                        респ.</span>
+                                </div>
+                            </div>
+                            <div class="projects__tiles-name other-projects__tiles-name">Линия производства
+                                гранулированного комбикорма</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="projects__tiles-item other-projects__tiles-item" href="javascript:void(0)">
+                            <div class="projects__tiles-image other-projects__tiles-image">
+                                <img src="img/projects-list/projects-list-5.jpg" alt="">
+                                <div class="projects__tiles-location other-projects__tiles-location">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3346 6.13976C10.3346 7.43137 9.56045 8.81768 8.61393 9.91794C8.1481 10.4594 7.66003 10.9085 7.24517 11.2178C7.03728 11.3727 6.85585 11.4866 6.71143 11.5593C6.55125 11.64 6.48881 11.6432 6.5013 11.6432V12.6432C6.73046 12.6432 6.96594 12.5508 7.16122 12.4524C7.37227 12.3461 7.60387 12.1977 7.84285 12.0195C8.32174 11.6625 8.86283 11.162 9.37201 10.5701C10.3755 9.40363 11.3346 7.7882 11.3346 6.13976H10.3346ZM6.5013 11.6432C6.5138 11.6432 6.45135 11.64 6.29117 11.5593C6.14675 11.4866 5.96533 11.3727 5.75743 11.2178C5.34258 10.9085 4.8545 10.4594 4.38868 9.91794C3.44215 8.81768 2.66797 7.43137 2.66797 6.13976H1.66797C1.66797 7.7882 2.62712 9.40363 3.63059 10.5701C4.13977 11.162 4.68086 11.6625 5.15976 12.0195C5.39874 12.1977 5.63033 12.3461 5.84138 12.4524C6.03666 12.5508 6.27214 12.6432 6.5013 12.6432V11.6432ZM2.66797 6.13976C2.66797 4.05252 4.37926 2.35156 6.5013 2.35156V1.35156C3.83687 1.35156 1.66797 3.49039 1.66797 6.13976H2.66797ZM6.5013 2.35156C8.62334 2.35156 10.3346 4.05252 10.3346 6.13976H11.3346C11.3346 3.49039 9.16573 1.35156 6.5013 1.35156V2.35156Z"
+                                            fill="white" />
+                                        <circle r="1.625" transform="matrix(-1 0 0 1 6.5 5.91406)" stroke="white" />
+                                    </svg>
+                                    <span class="projects__tiles-region other-projects__tiles-region">Воронежская
+                                        обл.</span>
+                                </div>
+                            </div>
+                            <div class="projects__tiles-name other-projects__tiles-name">Линия гранулирования лузги
+                                подсолнечника</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="projects__tiles-item other-projects__tiles-item" href="javascript:void(0)">
+                            <div class="projects__tiles-image other-projects__tiles-image">
+                                <img src="img/projects-list/projects-list-6.jpg" alt="">
+                                <div class="projects__tiles-location other-projects__tiles-location">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3346 6.13976C10.3346 7.43137 9.56045 8.81768 8.61393 9.91794C8.1481 10.4594 7.66003 10.9085 7.24517 11.2178C7.03728 11.3727 6.85585 11.4866 6.71143 11.5593C6.55125 11.64 6.48881 11.6432 6.5013 11.6432V12.6432C6.73046 12.6432 6.96594 12.5508 7.16122 12.4524C7.37227 12.3461 7.60387 12.1977 7.84285 12.0195C8.32174 11.6625 8.86283 11.162 9.37201 10.5701C10.3755 9.40363 11.3346 7.7882 11.3346 6.13976H10.3346ZM6.5013 11.6432C6.5138 11.6432 6.45135 11.64 6.29117 11.5593C6.14675 11.4866 5.96533 11.3727 5.75743 11.2178C5.34258 10.9085 4.8545 10.4594 4.38868 9.91794C3.44215 8.81768 2.66797 7.43137 2.66797 6.13976H1.66797C1.66797 7.7882 2.62712 9.40363 3.63059 10.5701C4.13977 11.162 4.68086 11.6625 5.15976 12.0195C5.39874 12.1977 5.63033 12.3461 5.84138 12.4524C6.03666 12.5508 6.27214 12.6432 6.5013 12.6432V11.6432ZM2.66797 6.13976C2.66797 4.05252 4.37926 2.35156 6.5013 2.35156V1.35156C3.83687 1.35156 1.66797 3.49039 1.66797 6.13976H2.66797ZM6.5013 2.35156C8.62334 2.35156 10.3346 4.05252 10.3346 6.13976H11.3346C11.3346 3.49039 9.16573 1.35156 6.5013 1.35156V2.35156Z"
+                                            fill="white" />
+                                        <circle r="1.625" transform="matrix(-1 0 0 1 6.5 5.91406)" stroke="white" />
+                                    </svg>
+                                    <span class="projects__tiles-region other-projects__tiles-region">Белгородская
+                                        обл.</span>
+                                </div>
+                            </div>
+                            <div class="projects__tiles-name other-projects__tiles-name">Линия приготовления
+                                белково-минеральной витаминной лузги
+                                подсолнечника</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="projects__tiles-item other-projects__tiles-item" href="javascript:void(0)">
+                            <div class="projects__tiles-image other-projects__tiles-image">
+                                <img src="img/projects-list/projects-list-3.jpg" alt="">
+                                <div class="projects__tiles-location other-projects__tiles-location">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3346 6.13976C10.3346 7.43137 9.56045 8.81768 8.61393 9.91794C8.1481 10.4594 7.66003 10.9085 7.24517 11.2178C7.03728 11.3727 6.85585 11.4866 6.71143 11.5593C6.55125 11.64 6.48881 11.6432 6.5013 11.6432V12.6432C6.73046 12.6432 6.96594 12.5508 7.16122 12.4524C7.37227 12.3461 7.60387 12.1977 7.84285 12.0195C8.32174 11.6625 8.86283 11.162 9.37201 10.5701C10.3755 9.40363 11.3346 7.7882 11.3346 6.13976H10.3346ZM6.5013 11.6432C6.5138 11.6432 6.45135 11.64 6.29117 11.5593C6.14675 11.4866 5.96533 11.3727 5.75743 11.2178C5.34258 10.9085 4.8545 10.4594 4.38868 9.91794C3.44215 8.81768 2.66797 7.43137 2.66797 6.13976H1.66797C1.66797 7.7882 2.62712 9.40363 3.63059 10.5701C4.13977 11.162 4.68086 11.6625 5.15976 12.0195C5.39874 12.1977 5.63033 12.3461 5.84138 12.4524C6.03666 12.5508 6.27214 12.6432 6.5013 12.6432V11.6432ZM2.66797 6.13976C2.66797 4.05252 4.37926 2.35156 6.5013 2.35156V1.35156C3.83687 1.35156 1.66797 3.49039 1.66797 6.13976H2.66797ZM6.5013 2.35156C8.62334 2.35156 10.3346 4.05252 10.3346 6.13976H11.3346C11.3346 3.49039 9.16573 1.35156 6.5013 1.35156V2.35156Z"
+                                            fill="white" />
+                                        <circle r="1.625" transform="matrix(-1 0 0 1 6.5 5.91406)" stroke="white" />
+                                    </svg>
+                                    <span class="projects__tiles-region other-projects__tiles-region">Рязанская
+                                        обл.</span>
+                                </div>
+                            </div>
+                            <div class="projects__tiles-name other-projects__tiles-name">Линия гранулирования лузги
+                                подсолнечника</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="projects__tiles-item other-projects__tiles-item" href="javascript:void(0)">
+                            <div class="projects__tiles-image other-projects__tiles-image">
+                                <img src="img/projects-list/projects-list-1.jpg" alt="">
+                                <div class="projects__tiles-location other-projects__tiles-location">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3346 6.13976C10.3346 7.43137 9.56045 8.81768 8.61393 9.91794C8.1481 10.4594 7.66003 10.9085 7.24517 11.2178C7.03728 11.3727 6.85585 11.4866 6.71143 11.5593C6.55125 11.64 6.48881 11.6432 6.5013 11.6432V12.6432C6.73046 12.6432 6.96594 12.5508 7.16122 12.4524C7.37227 12.3461 7.60387 12.1977 7.84285 12.0195C8.32174 11.6625 8.86283 11.162 9.37201 10.5701C10.3755 9.40363 11.3346 7.7882 11.3346 6.13976H10.3346ZM6.5013 11.6432C6.5138 11.6432 6.45135 11.64 6.29117 11.5593C6.14675 11.4866 5.96533 11.3727 5.75743 11.2178C5.34258 10.9085 4.8545 10.4594 4.38868 9.91794C3.44215 8.81768 2.66797 7.43137 2.66797 6.13976H1.66797C1.66797 7.7882 2.62712 9.40363 3.63059 10.5701C4.13977 11.162 4.68086 11.6625 5.15976 12.0195C5.39874 12.1977 5.63033 12.3461 5.84138 12.4524C6.03666 12.5508 6.27214 12.6432 6.5013 12.6432V11.6432ZM2.66797 6.13976C2.66797 4.05252 4.37926 2.35156 6.5013 2.35156V1.35156C3.83687 1.35156 1.66797 3.49039 1.66797 6.13976H2.66797ZM6.5013 2.35156C8.62334 2.35156 10.3346 4.05252 10.3346 6.13976H11.3346C11.3346 3.49039 9.16573 1.35156 6.5013 1.35156V2.35156Z"
+                                            fill="white" />
+                                        <circle r="1.625" transform="matrix(-1 0 0 1 6.5 5.91406)" stroke="white" />
+                                    </svg>
+                                    <span class="projects__tiles-region other-projects__tiles-region">Астраханская
+                                        обл.</span>
+                                </div>
+                            </div>
+                            <div class="projects__tiles-name other-projects__tiles-name">Линия гранулирования лузги
+                                подсолнечника</div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="projects__tiles-item other-projects__tiles-item" href="javascript:void(0)">
+                            <div class="projects__tiles-image other-projects__tiles-image">
+                                <img src="img/projects-list/projects-list-2.jpg" alt="">
+                                <div class="projects__tiles-location other-projects__tiles-location">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.3346 6.13976C10.3346 7.43137 9.56045 8.81768 8.61393 9.91794C8.1481 10.4594 7.66003 10.9085 7.24517 11.2178C7.03728 11.3727 6.85585 11.4866 6.71143 11.5593C6.55125 11.64 6.48881 11.6432 6.5013 11.6432V12.6432C6.73046 12.6432 6.96594 12.5508 7.16122 12.4524C7.37227 12.3461 7.60387 12.1977 7.84285 12.0195C8.32174 11.6625 8.86283 11.162 9.37201 10.5701C10.3755 9.40363 11.3346 7.7882 11.3346 6.13976H10.3346ZM6.5013 11.6432C6.5138 11.6432 6.45135 11.64 6.29117 11.5593C6.14675 11.4866 5.96533 11.3727 5.75743 11.2178C5.34258 10.9085 4.8545 10.4594 4.38868 9.91794C3.44215 8.81768 2.66797 7.43137 2.66797 6.13976H1.66797C1.66797 7.7882 2.62712 9.40363 3.63059 10.5701C4.13977 11.162 4.68086 11.6625 5.15976 12.0195C5.39874 12.1977 5.63033 12.3461 5.84138 12.4524C6.03666 12.5508 6.27214 12.6432 6.5013 12.6432V11.6432ZM2.66797 6.13976C2.66797 4.05252 4.37926 2.35156 6.5013 2.35156V1.35156C3.83687 1.35156 1.66797 3.49039 1.66797 6.13976H2.66797ZM6.5013 2.35156C8.62334 2.35156 10.3346 4.05252 10.3346 6.13976H11.3346C11.3346 3.49039 9.16573 1.35156 6.5013 1.35156V2.35156Z"
+                                            fill="white" />
+                                        <circle r="1.625" transform="matrix(-1 0 0 1 6.5 5.91406)" stroke="white" />
+                                    </svg>
+                                    <span class="projects__tiles-region other-projects__tiles-region">Нижегородская
+                                        обл.</span>
+                                </div>
+                            </div>
+                            <div class="projects__tiles-name other-projects__tiles-name">Автоматическая линия
+                                производства гранулированного
+                                комбикорма
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="btn-wrapper">
+                <a href="javascript:void(0)" class="btn">Ко всем отзывам</a>
+            </div>
+        </div>
+    </section>
+    <!-- конец секции "Реализованные проекты" -->
+
+    <!-- начало секции "Контакты" -->
+    <section class="contacts">
+        <div class="wrapper">
+            <div class="title-container">
+                <span class="title-span"></span>
+                <h3 class="title">Контакты</h3>
+                <span class="title-span"></span>
+            </div>
+            <a href="tel:88314180190" class="contacts__phone" rel="nofollow"><svg width="20" height="20"
+                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9872 18.0823L17.6623 17.3054C18.092 16.8751 18.3333 16.2922 18.3333 15.6846C18.3333 15.077 18.092 14.4942 17.6623 14.0639C17.6393 14.0409 15.8543 12.6701 15.8543 12.6701C15.4259 12.263 14.8569 12.0364 14.2654 12.0372C13.6739 12.038 13.1055 12.2663 12.6782 12.6745L11.2642 13.8639C10.1099 13.387 9.06141 12.6873 8.17885 11.8047C7.29629 10.9222 6.59707 9.87436 6.12136 8.72133L7.3084 7.31423C7.71771 6.88778 7.94665 6.32028 7.94761 5.72969C7.94858 5.13909 7.72151 4.57085 7.31359 4.14307C7.31359 4.14307 5.93885 2.36346 5.91585 2.3405C5.49257 1.91522 4.91866 1.67325 4.31812 1.66688C3.71759 1.6605 3.13866 1.89023 2.70641 2.30643L1.85322 3.04701C-3.18723 8.88426 7.66673 19.6352 13.7073 19.442C14.3172 19.4455 14.9217 19.327 15.4851 19.0934C16.0484 18.8599 16.5592 18.5161 16.9872 18.0823Z"
+                        fill="#FF6D1A" />
+                    <path
+                        d="M11.6666 4.16679C12.2222 4.0742 13.6111 4.16679 14.7222 5.2779C15.8333 6.38901 15.9259 7.96308 15.8333 8.61122"
+                        stroke="#FF6D1A" stroke-linecap="round" />
+                    <path
+                        d="M11.1111 0.833443C11.6666 0.740851 14.859 0.719592 16.9444 2.80504C19.0298 4.89048 19.2592 7.96309 19.1666 8.61123"
+                        stroke="#FF6D1A" stroke-linecap="round" />
+                </svg><span class="contacts__phone-span">8 (831)
+                    418-01-90</span></a>
+            <div class="socials">
+                <a href="#" class="socials__item contacts-socials__item" rel="nofollow"><svg width="26" height="26"
+                        viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                            stroke="#FF6D1A" />
+                        <path
+                            d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                            stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#" class="socials__item contacts-socials__item" rel="nofollow"> <svg width="22" height="22"
+                        viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                            stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                            stroke="#FF6D1A" />
+                        <path
+                            d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                            stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="contacts__address">Нижний Новгород, переулок Союзный, д. 45, 4-й этаж, офис 12</div>
+            <a href="mailto:promgrann@yandex.ru" class="contacts__mail" rel="nofollow"><span
+                    class="contacts__mail-span">promgrann@yandex.ru</span></a>
+            <div class="contacts__map">
+                <a class="contacts__map-btn"><span class="contacts__map-btn-span contacts__map-btn-span-show">Посмотреть
+                        на
+                        карте</span><span class="contacts__map-btn-span contacts__map-btn-span-hide">Скрыть</span></a>
+            </div>
+        </div>
+        <div class="contacts__image">
+            <img src="img/contacts/img.png" alt="">
+        </div>
+    </section>
+    <!-- конец секции "Контакты" -->
+
+    <!-- начало секции "Карта" -->
+    <section id="map2" class="map">
+        <div class="map__image">
+            <img src="img/contacts/map.png" alt="">
+        </div>
+    </section>
+    <!-- конец секции "Карта" -->
+
+    <!-- начало секции "Подвал" -->
+    <footer class="footer main-footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <div class="footer__container-first">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <a href="#" class="footer__logo-link"><img src="img/logo.svg" alt=""></a>
+                        </div>
+                        <a href="tel:88314180190" class="phone" rel="nofollow">8 (831) 418-01-90</a>
+                        <div class="socials footer__socials">
+                            <a href="#" class="socials__item" rel="nofollow"><svg width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.27026 18.6394L3.33944 18.4272L3.22769 18.234C2.26812 16.5752 1.71877 14.6494 1.71877 12.5938C1.71877 6.36329 6.76956 1.3125 13 1.3125C19.2305 1.3125 24.2813 6.36329 24.2813 12.5938C24.2813 18.8242 19.2305 23.875 13 23.875C11.0522 23.875 9.22102 23.3818 7.62315 22.5138L7.43319 22.4106L7.22788 22.4783L1.391 24.4032L3.27026 18.6394ZM1.21509 24.4613C1.21516 24.4612 1.21524 24.4612 1.21532 24.4612L1.21509 24.4613Z"
+                                        stroke="#FF6D1A" />
+                                    <path
+                                        d="M11.494 8.8533L9.42793 6.7872C9.26928 6.62855 9.01206 6.62855 8.85341 6.7872L7.16839 8.47223C7.12948 8.51113 7.09828 8.55681 7.08167 8.60926C6.83441 9.39009 6.83694 11.9071 10.1563 15.0312C13.4912 18.1699 15.7526 18.9089 16.7573 18.7119C16.8251 18.6986 16.885 18.6618 16.9339 18.613L18.8065 16.7403C18.9652 16.5817 18.9652 16.3245 18.8065 16.1658L16.7404 14.0997C16.5818 13.941 16.3246 13.9411 16.1659 14.0997L15.3781 14.8876C15.2876 14.978 15.1599 15.0219 15.0356 14.9922C14.461 14.855 13.3348 14.4101 12.1875 13.4062C11.006 12.3723 10.6299 11.1483 10.5711 10.5271C10.561 10.4199 10.6053 10.3165 10.6815 10.2403L11.494 9.42783C11.6527 9.26918 11.6527 9.01195 11.494 8.8533Z"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
+                            <a href="#" class="socials__item" rel="nofollow"> <svg width="22" height="22"
+                                    viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 6.53133C11.4583 6.47404 12.5812 6.60008 13.4062 7.56258C14.2312 8.52508 14.2083 9.56777 14.0937 9.96879M10.8281 3.7813C11.7448 3.66671 13.9219 3.9188 15.2969 5.8438C16.6719 7.7688 16.7865 9.51047 16.6719 10.1407"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M2 7C2 3.68629 4.68629 1 8 1H14C17.3137 1 20 3.68629 20 7V13C20 16.3137 17.3137 19 14 19H10L8.06464 20.3824C7.04703 21.1093 6.19453 20.9679 6.24581 19.7185C6.26715 19.1984 6.24462 18.745 6 18.6586C3.66962 17.8349 2 15.6124 2 13V7Z"
+                                        stroke="#FF6D1A" />
+                                    <path
+                                        d="M9.22776 8.17918L7.45427 6.26927C7.32447 6.12949 7.10568 6.12212 6.96678 6.25286L5.32899 7.79431C4.76411 8.32595 4.75058 9.21934 5.29909 9.76785L10.8245 15.2932C11.3853 15.8541 12.303 15.8254 12.8278 15.2307L14.2239 13.6484C14.344 13.5123 14.3375 13.3063 14.2092 13.1779L12.4462 11.415C12.312 11.2807 12.0943 11.2807 11.9601 11.415L11.5869 11.7882C11.4526 11.9225 11.235 11.9225 11.1007 11.7882L8.83685 9.52436C8.70261 9.39012 8.70261 9.17247 8.83685 9.03823L9.21893 8.65615C9.34967 8.52541 9.35357 8.31467 9.22776 8.17918Z"
+                                        stroke="#FF6D1A" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <nav class="footer__nav">
+                            <ul>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Каталог</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Акции</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Линии гранулирования</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Реализованные проекты</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <nav class="footer__nav footer__nav-second">
+                            <ul>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Каталог</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Акции</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Линии гранулирования</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Реализованные проекты</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                                <li class="footer__nav-item"><a class="footer__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__container-second">
+                    <div class="footer__item">
+                        <div class="footer__work">
+                            <div class="footer__work-days">ПН - ПТ</div>
+                            <div class="footer__work-hours"><span>8<sup>00</sup></span> - 18<sup>00</sup></div>
+                        </div>
+                        <div class="address">Нижний Новгород, переулок Союзный, д. 45, 4-й этаж, офис 12</div>
+                        <a href="mailto:promgrann@yandex.ru" class="mail"><span
+                                class="mail-span">promgrann@yandex.ru</span></a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__upfly">
+                            <div class="footer__upfly-icon">
+                                <img src="img/upfly.svg" alt="">
+                            </div>
+                            <div class="footer__upfly-text">Разработано в UpFly</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- конец секции "Подвал" -->
+
+    <!-- нижняя менюшка на планшетах/телефонах -->
+    <section class="buttom-menu">
+        <div class="buttom-menu__wrapper">
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/home.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Главная</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/catalog.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Каталог</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/granulation.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Линии
+                        гранулирования</span>
+                </a>
+            </div>
+            <div class="buttom-menu__item">
+                <a href="#" class="buttom-menu__link">
+                    <div class="buttom-menu__image">
+                        <img src="img/buttom-menu/contacts.svg" alt="">
+                    </div>
+                    <span class="buttom-menu__span">Контакты</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- конец нижняя менюшка на планшетах/телефонах -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/full-main.js"></script>
+</body>
+
+</html>
